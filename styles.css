@@ -8,7 +8,7 @@
 :root {
     /* Apple 风格配色系统 - 高端简洁 */
     --primary-color: #0071e3; /* 苹果蓝 - 经典强调色 */
-    --primary-dark: #005bb5; /* 深苹果蓝 */
+    --primary-dark: #ffffff; /* 深苹果蓝 */
     --primary-light: #e8f4fd; /* 浅苹果蓝 - 背景点缀 */
     --secondary-color: #0055d4; /* 中苹果蓝 */
     --accent-color: #0071e3; /* 苹果蓝 - 强调色 */
