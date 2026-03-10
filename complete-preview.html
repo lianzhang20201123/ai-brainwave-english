@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI脑波英语官网 - 完整展示</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            padding: 20px;
+            background: #f9fafb;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #671372;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #4a1f52;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #671372;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #671372;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .page-nav {
+            background: #671372;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .page-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .page-nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .page-nav a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .stat-item {
+            background: #eff6ff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #2563eb;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .feature-card {
+            background: #f9fafb;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .case-card {
+            background: linear-gradient(135deg, #671372 0%, #4a1f52 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .case-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .case-stat {
+            text-align: center;
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .case-stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .comparison-table {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .comparison-table th {
+            background: #671372;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        .comparison-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .comparison-table tr:hover {
+            background: #f9fafb;
+        }
+        .contact-info {
+            background: #f5e6f7;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .contact-item {
+            margin: 15px 0;
+        }
+        .contact-value {
+            color: #2563eb;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .faq-item {
+            background: #f9fafb;
+            margin: 15px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .faq-question {
+            background: #2563eb;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .faq-answer {
+            padding: 15px;
+            display: none;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        .cta {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        .cta h2 {
+            color: white;
+            border: none;
+        }
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #1e40af;
+            transform: translateY(-2px);
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #92400e;
+        }
+        .testimonial-card {
+            background: white;
+            border: 2px solid #2563eb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .testimonial-text {
+            font-style: italic;
+            color: #6b7280;
+        }
+        .testimonial-author {
+            font-weight: bold;
+            color: #2563eb;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 AI脑波英语 - 官方网站完整展示</h1>
+
+        <div class="page-nav">
+            <h3 style="color:white; margin-bottom:15px;">快速导航</h3>
+            <ul>
+                <li><a href="#home">🏠 首页</a></li>
+                <li><a href="#product">🔬 产品介绍</a></li>
+                <li><a href="#cases">📚 成功案例</a></li>
+                <li><a href="#contact">📞 联系我们</a></li>
+            </ul>
+        </div>
+
+        <div id="home">
+            <h2>🏠 首页</h2>
+
+            <h3 style="text-align: center; font-size: 2rem;">躺着学英语<br>激活记忆潜能</h3>
+            <p style="text-align: center; font-size: 1.2rem; color: #6b7280; margin: 20px 0;">
+                基于脑科学技术的英语学习解决方案<br>让单词记忆效率提升10倍
+            </p>
+
+            <h3>核心数据</h3>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <div class="stat-number">225人</div>
+                    <div>真实使用人数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">+24.65分</div>
+                    <div>2个月平均提分</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">90%</div>
+                    <div>一年记忆保留率</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div>合作城市</div>
+                </div>
+            </div>
+
+            <h3>为什么选择AI脑波英语</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h4>激活记忆开关</h4>
+                    <p>通过特定频率声波，帮助大脑进入θ波状态，打开长期记忆形成的黄金窗口</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎧</div>
+                    <h4>躺着学英语</h4>
+                    <p>只需躺在学习仓中，戴上耳机听声波，轻松记住数百个单词</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4>高效记忆</h4>
+                    <p>每天2小时，轻松过300个单词，传统方法需要一天的工作量</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h4>安全可靠</h4>
+                    <p>通过权威机构检测，声波强度低于手机辐射</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h4>数据验证</h4>
+                    <p>追踪300名体验者一年数据，单词保留率接近90%</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h4>多地落地</h4>
+                    <p>已在北京、青岛、苏州、石家庄、长春等城市落地</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="product">
+            <h2>🔬 产品介绍</h2>
+
+            <h3>技术原理</h3>
+            <p><strong>β波（14-30Hz）</strong>：清醒忙碌状态，记忆留存浅</p>
+            <p><strong>θ波（4-8Hz）</strong>：放松冥想状态，<span class="highlight">长期记忆形成的黄金窗口</span></p>
+            <p><strong>AI脑波英语声波技术</strong>：特定频率声波帮助大脑进入θ波状态，打开记忆"开关"</p>
+
+            <h3>学习流程（4步）</h3>
+            <ol style="margin-left: 20px; line-height: 2;">
+                <li><strong>进入学习仓</strong> - 躺在学习仓中放松身体</li>
+                <li><strong>佩戴耳机</strong> - 戴上耳机听特定频率声波</li>
+                <li><strong>记忆单词</strong> - 在θ波状态下，单词自动进入长期记忆区</li>
+                <li><strong>高效记忆</strong> - 起身后，单词已印在脑海</li>
+            </ol>
+
+            <h3>安全性说明（5个事实）</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <strong>🔊 事实一</strong>：不是"辐射"，是"声波"
+                </div>
+                <div class="feature-card">
+                    <strong>✅ 事实二</strong>：已通过第三方严格检测
+                </div>
+                <div class="feature-card">
+                    <strong>📱 事实三</strong>：强度低于手机辐射
+                </div>
+                <div class="feature-card">
+                    <strong>👶 事实四</strong>：孩子亲自感受，轻盈舒适
+                </div>
+                <div class="feature-card">
+                    <strong>🛡️ 事实五</strong>：安全是底线
+                </div>
+            </div>
+
+            <h3>传统方法 vs AI脑波英语</h3>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>对比项目</th>
+                            <th>传统方法</th>
+                            <th>AI脑波英语</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>学习方式</td>
+                            <td>死记硬背</td>
+                            <td>躺着听</td>
+                        </tr>
+                        <tr>
+                            <td>日背单词数</td>
+                            <td>50-100个</td>
+                            <td><span class="highlight">300-500个</span></td>
+                        </tr>
+                        <tr>
+                            <td>一年保留率</td>
+                            <td>30%</td>
+                            <td><span class="highlight">90%</span></td>
+                        </tr>
+                        <tr>
+                            <td>学习体验</td>
+                            <td>枯燥</td>
+                            <td>轻松</td>
+                        </tr>
+                        <tr>
+                            <td>所需时间</td>
+                            <td>3-4小时/天</td>
+                            <td><span class="highlight">2小时/天</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="cases">
+            <h2>📚 成功案例</h2>
+
+            <div class="case-card">
+                <h3>🏫 鄂尔多斯康巴什未来学校</h3>
+                <p style="font-size: 1.2rem; margin: 15px 0;">初三225名学生，2个月时间，<strong>英语平均分涨了24.65分</strong></p>
+                <div class="case-stats">
+                    <div class="case-stat">
+                        <div class="case-stat-number">225</div>
+                        <div>参与学生</div>
+                    </div>
+                    <div class="case-stat">
+                        <div class="case-stat-number">24.65</div>
+                        <div>平均提分</div>
+                    </div>
+                    <div class="case-stat">
+                        <div class="case-stat-number">2</div>
+                        <div>学习月数</div>
+                    </div>
+                </div>
+                <p><strong>这不是奇迹，这是脑科学。</strong></p>
+            </div>
+
+            <h3>更多成功案例</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <strong>📍 青岛某重点中学</strong><br>
+                    3个月词汇量增长 +2000词<br>
+                    成绩从中下游提升到前10名
+                </div>
+                <div class="feature-card">
+                    <strong>📍 北京某培训机构</strong><br>
+                    学员平均提分 +18.5分<br>
+                    续费率达到85%以上
+                </div>
+                <div class="feature-card">
+                    <strong>📍 苏州某国际学校</strong><br>
+                    托福平均分提升 +25分<br>
+                    从80+提升到105+
+                </div>
+            </div>
+
+            <h3>用户真实反馈</h3>
+            <div class="testimonial-card">
+                <div class="testimonial-text">"第一天背的单词，第二天早上起来能记住90%以上，而且不觉得累。"</div>
+                <div class="testimonial-author">- 张同学，初三学生</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-text">"以前一天背50个就头疼，现在每天轻松过300个，像听音乐一样。"</div>
+                <div class="testimonial-author">- 王同学，高二学生</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-text">"引入AI脑波英语后，我们的教学效果提升了3倍。"</div>
+                <div class="testimonial-author">- 陈校长，教育培训机构创始人</div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h2>📞 联系我们</h2>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>📱 微信联系</strong><br>
+                    <div class="contact-value">lianzhang8877</div>
+                    <small>请添加微信时备注：合作</small>
+                </div>
+                <div class="contact-item">
+                    <strong>🏢 商务合作</strong><br>
+                    <div class="contact-value">面向全国年营收千万级的教育机构</div>
+                </div>
+                <div class="contact-item">
+                    <strong>🌍 合作城市</strong><br>
+                    <div class="contact-value">北京、青岛、苏州、石家庄、长春、鄂尔多斯</div>
+                </div>
+                <div class="contact-item">
+                    <strong>📞 服务时间</strong><br>
+                    <div class="contact-value">周一至周日 9:00 - 21:00</div>
+                </div>
+            </div>
+
+            <h3>常见问题</h3>
+            <div class="faq-item active">
+                <div class="faq-question">AI脑波英语适合什么年龄段？</div>
+                <div class="faq-answer">
+                    主要面向中小学生（10-18岁），同时也适用于成年人学习。对于10岁以下儿童，建议在家长陪同下使用。
+                </div>
+            </div>
+            <div class="faq-item active">
+                <div class="faq-question">每天需要学习多长时间？</div>
+                <div class="faq-answer">
+                    建议每天2小时，可以连续使用也可以分两次进行。关键是要保持规律性，每天坚持效果最好。
+                </div>
+            </div>
+            <div class="faq-item active">
+                <div class="faq-question">学习效果能持续多久？</div>
+                <div class="faq-answer">
+                    根据跟踪数据，使用AI脑波英语记忆的单词，一年后平均保留率接近90%，远超传统方法的30%。
+                </div>
+            </div>
+            <div class="faq-item active">
+                <div class="faq-question">设备安全吗？对孩子有副作用吗？</div>
+                <div class="faq-answer">
+                    完全安全。设备使用特定频率的声波，不是电磁辐射，已通过权威机构严格检测。声波强度低于手机辐射，孩子可以放心使用。
+                </div>
+            </div>
+        </div>
+
+        <div class="cta">
+            <h2>🎉 让英语回归本能</h2>
+            <p style="font-size: 1.2rem;">欢迎全国各地年营收千万级的教育机构合作</p>
+            <a href="#contact" class="btn">立即联系我们</a>
+        </div>
+
+        <div class="footer">
+            <h3>AI脑波英语</h3>
+            <p style="color: #9ca3af; margin-top: 10px;">基于脑科学技术的英语学习解决方案</p>
+            <p style="margin-top: 15px;">微信：lianzhang8877</p>
+            <p>&copy; 2025 AI脑波英语. All rights reserved.</p>
+        </div>
+
+        <div style="background: #fef3c7; padding: 20px; border-radius: 8px; margin-top: 30px;">
+            <h3 style="color: #92400e; border: none;">📁 项目文件位置</h3>
+            <p><strong>项目目录：</strong>/workspace/projects/ai-brainwave-english-website/</p>
+            <p><strong>打包下载：</strong>/workspace/projects/ai-brainwave-english-website-tech.tar.gz (2.0MB)</p>
+            <p><strong>包含文件：</strong></p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>index.html - 首页</li>
+                <li>product.html - 产品介绍</li>
+                <li>cases.html - 成功案例</li>
+                <li>contact.html - 联系我们</li>
+                <li>styles.css - 样式文件</li>
+                <li>script.js - 交互脚本</li>
+                <li>README.md - 项目文档</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // FAQ手风琴效果
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
