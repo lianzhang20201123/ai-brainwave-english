@@ -1,12 +1,5 @@
 {
   "version": 2,
-  "name": "ai-brainwave-english",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
