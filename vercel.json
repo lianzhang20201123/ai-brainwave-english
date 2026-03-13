@@ -1,5 +1,5 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
   "trailingSlash": false,
   "headers": [
     {
@@ -10,45 +10,6 @@
           "value": "public, max-age=31536000, immutable"
         }
       ]
-    },
-    {
-      "source": "/(.*).html",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/principle",
-      "destination": "/principle.html"
-    },
-    {
-      "source": "/courses",
-      "destination": "/courses.html"
-    },
-    {
-      "source": "/cases",
-      "destination": "/cases.html"
-    },
-    {
-      "source": "/safety",
-      "destination": "/safety.html"
-    },
-    {
-      "source": "/partner",
-      "destination": "/partner.html"
-    },
-    {
-      "source": "/contact",
-      "destination": "/contact.html"
     }
   ]
 }

@@ -1,118 +1,46 @@
-# AI脑波英语网站（GitHub + Vercel 版）
+# AI脑波英语官网静态站
 
-这是一个可直接上传到 GitHub 并部署到 Vercel 的静态多页面网站，域名为 **ai-naobo.com**。
+适用于 GitHub + Vercel 部署。
 
-## 包含内容
+## 本地结构
 
-- 首页：`index.html`
-- 核心原理：`principle.html`
-- 课程体系：`courses.html`
-- 成功案例：`cases.html`
-- 安全认证：`safety.html`
-- 机构合作：`partner.html`
-- 联系我们：`contact.html`
-- 404 页面：`404.html`
-- 静态资源目录：`assets/`
-- 部署配置：`vercel.json`
-- 搜索配置：`robots.txt`、`sitemap.xml`
+- `index.html` 首页
+- `principle.html` 核心原理
+- `courses.html` 课程体系
+- `cases.html` 成功案例
+- `safety.html` 安全认证
+- `partner.html` 机构合作
+- `contact.html` 联系我们
+- `assets/` 图片、视频、文档、样式、脚本
 
-## 目录结构
+## 部署到 GitHub
 
-```text
-.
-├── index.html
-├── principle.html
-├── courses.html
-├── cases.html
-├── safety.html
-├── partner.html
-├── contact.html
-├── 404.html
-├── robots.txt
-├── sitemap.xml
-├── vercel.json
-├── .gitignore
-├── DEPLOY.md
-└── assets/
-    ├── styles.css
-    ├── app.js
-    ├── hero-split.jpg
-    ├── children-room.jpg
-    ├── adult-room.jpg
-    ├── student-focus.jpg
-    ├── school-report.jpg
-    ├── emc-cover.png
-    ├── emc-result.png
-    ├── bozai-qr.jpg
-    ├── student-video.mp4
-    ├── student-video-poster.jpg
-    ├── core-principle.pdf
-    └── intro.pdf
-```
-
-## 本地预览
-
-方法一：直接双击 `index.html`
-
-方法二：推荐使用本地静态服务器
-
-```bash
-python3 -m http.server 8000
-```
-
-然后打开：
-
-```text
-http://localhost:8000
-```
-
-## 上传到 GitHub
-
-### 方案一：命令行
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/你的用户名/你的仓库名.git
-git push -u origin main
-```
-
-### 方案二：网页上传
-
-1. 在 GitHub 新建仓库
-2. 把本目录下所有文件上传到仓库根目录
-3. 确认首页文件为 `index.html`
+1. 新建 GitHub 仓库
+2. 上传全部文件到仓库根目录
+3. 确认 `assets/` 文件夹完整上传
 
 ## 部署到 Vercel
 
 1. 登录 Vercel
-2. 点击 **Add New -> Project**
-3. 选择你的 GitHub 仓库并导入
-4. Root Directory 保持仓库根目录
-5. 不需要额外环境变量
-6. 点击部署
+2. 导入 GitHub 仓库
+3. Framework Preset 选择 `Other`
+4. Build Command 留空
+5. Output Directory 留空
+6. 点击 Deploy
+7. 在 Vercel 项目设置中绑定域名 `ai-naobo.com`
 
-## 绑定域名 ai-naobo.com
+## 域名与 SEO
 
-1. 进入 Vercel 项目
-2. 打开 **Settings -> Domains**
-3. 添加域名：`ai-naobo.com`
-4. 按 Vercel 提示在域名服务商处配置 DNS
+- sitemap: `https://ai-naobo.com/sitemap.xml`
+- robots: `https://ai-naobo.com/robots.txt`
+- 所有页面均已写入基础 meta 信息和 canonical
 
-## 后续更新
 
-后续只需要修改文件后重新提交到 GitHub：
+## 视频说明
 
-```bash
-git add .
-git commit -m "update site"
-git push
-```
+本版本精选保留 2 个视频文件：
 
-Vercel 会自动触发新部署。
+- `assets/videos/room-demo.mp4`
+- `assets/videos/changchun-room.mp4`
 
-## 说明
-
-这是一个纯静态站点，不依赖数据库和后端服务，适合展示型官网、课程介绍、案例展示、品牌官网和咨询落地页。
+每个视频文件均小于 25MB，更适合通过 GitHub 网页端上传。
