@@ -1,56 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://ai-naobo.com/</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/courses.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/cases.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/partner.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/principle.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/safety.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/contact.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/insights.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/news/child-forgets-english-words.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/news/english-words-forget-after-memorizing.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/news/junior-high-english-vocabulary-problem.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/news/high-school-vocabulary-gap.html</loc>
-  </url>
-  <url>
-    <loc>https://ai-naobo.com/news/english-score-low-because-of-vocabulary.html</loc>
-  </url>
-  <url><loc>https://ai-naobo.com/news/how-to-improve-zhongkao-english-fast.html</loc></url>
-  <url><loc>https://ai-naobo.com/news/how-to-prepare-gaokao-vocabulary.html</loc></url>
-  <url><loc>https://ai-naobo.com/news/best-way-for-kids-to-memorize-words.html</loc></url>
-  <url><loc>https://ai-naobo.com/news/is-brainwave-english-safe.html</loc></url>
-  <url><loc>https://ai-naobo.com/news/who-is-ai-brainwave-english-for.html</loc></url>
-
-  <url><loc>https://ai-naobo.com/en/</loc></url>
+  <url><loc>https://ai-naobo.com/</loc></url>
+  <url><loc>https://ai-naobo.com/principle.html</loc></url>
+  <url><loc>https://ai-naobo.com/courses.html</loc></url>
+  <url><loc>https://ai-naobo.com/cases.html</loc></url>
+  <url><loc>https://ai-naobo.com/safety.html</loc></url>
+  <url><loc>https://ai-naobo.com/insights.html</loc></url>
+  <url><loc>https://ai-naobo.com/partner.html</loc></url>
+  <url><loc>https://ai-naobo.com/contact.html</loc></url>
+  <url><loc>https://ai-naobo.com/en/index.html</loc></url>
   <url><loc>https://ai-naobo.com/en/principle.html</loc></url>
   <url><loc>https://ai-naobo.com/en/courses.html</loc></url>
   <url><loc>https://ai-naobo.com/en/cases.html</loc></url>
   <url><loc>https://ai-naobo.com/en/safety.html</loc></url>
+  <url><loc>https://ai-naobo.com/en/insights.html</loc></url>
   <url><loc>https://ai-naobo.com/en/partner.html</loc></url>
   <url><loc>https://ai-naobo.com/en/contact.html</loc></url>
-  <url><loc>https://ai-naobo.com/en/insights.html</loc></url>
+  <url><loc>https://ai-naobo.com/news/kid-vocabulary-habits.html</loc></url>
+  <url><loc>https://ai-naobo.com/en/news/kid-vocabulary-habits.html</loc></url>
+  <url><loc>https://ai-naobo.com/news/school-program-evaluation.html</loc></url>
+  <url><loc>https://ai-naobo.com/en/news/school-program-evaluation.html</loc></url>
+  <url><loc>https://ai-naobo.com/news/cet-vocabulary-plan.html</loc></url>
+  <url><loc>https://ai-naobo.com/en/news/cet-vocabulary-plan.html</loc></url>
+  <url><loc>https://ai-naobo.com/news/toefl-ielts-vocab-path.html</loc></url>
+  <url><loc>https://ai-naobo.com/en/news/toefl-ielts-vocab-path.html</loc></url>
+  <url><loc>https://ai-naobo.com/news/learning-environment-matters.html</loc></url>
+  <url><loc>https://ai-naobo.com/en/news/learning-environment-matters.html</loc></url>
+  <url><loc>https://ai-naobo.com/news/before-the-free-assessment.html</loc></url>
+  <url><loc>https://ai-naobo.com/en/news/before-the-free-assessment.html</loc></url>
 </urlset>
