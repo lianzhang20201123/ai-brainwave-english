@@ -1,0 +1,1 @@
+Upload the entire en/ folder in this package to your GitHub repository root. It replaces the broken English pages with pages that use the same style system as the Chinese site. No other files are required.
