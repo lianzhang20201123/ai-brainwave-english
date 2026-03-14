@@ -1,0 +1,6 @@
+把这个压缩包里的文件按原有目录结构上传到 GitHub 仓库根目录即可：
+1) 上传 insights.html
+2) 上传 news/ 文件夹
+3) 用这里的 assets/css/style.css 覆盖原文件
+4) 用这里的 sitemap.xml 覆盖原文件
+5) 如需前台导航显示“资讯”，请把本包里的 index.html、courses.html、cases.html、safety.html、partner.html、contact.html、principle.html 一起覆盖上传。
