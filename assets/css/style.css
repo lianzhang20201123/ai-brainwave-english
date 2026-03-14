@@ -252,3 +252,7 @@ img, video { display: block; max-width: 100%; }
 .cta-panel h3{margin:0 0 10px;font-size:32px;line-height:1.1;}
 .cta-panel p{margin:0 0 20px;color:rgba(255,255,255,.88);}
 @media (max-width:1080px){.article-shell,.insights-grid{grid-template-columns:1fr}.article-aside{position:static;}}
+
+
+.lang-switch{min-width:48px;text-align:center;padding-inline:14px;}
+@media (max-width: 1024px){.header-cta .lang-switch{display:none;}}
