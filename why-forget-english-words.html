@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>为什么背单词总是忘？不是你笨，是方法错了 - AI脑波英语</title>
+  <meta name="description" content="背单词总是忘不是记忆力差，是短时记忆和长期记忆的原理没搞清楚。本文用θ波原理解释为什么传统背单词效率极低，以及如何让大脑真正"存入"单词。">
+  <meta name="keywords" content="背单词总是忘,短时记忆长期记忆,θ波记忆,英语单词记忆方法,遗忘曲线,AI脑波英语原理">
+  <link rel="canonical" href="https://ai-naobo.com/news/why-forget-english-words.html">
+  <meta property="og:title" content="为什么背单词总是忘？不是你笨，是方法错了">
+  <meta property="og:description" content="短时记忆vs长期记忆，θ波原理详解。背单词总是忘的根本原因和解决方案。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-naobo.com/news/why-forget-english-words.html">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; color: #2c3e50; }
+    .article-hero { background: linear-gradient(135deg, #0f4c81 0%, #1d6cf2 100%); color: #fff; padding: 60px 0 40px; }
+    .article-hero h1 { font-size: clamp(26px, 4vw, 42px); font-weight: 900; line-height: 1.3; margin: 0 0 16px; }
+    .article-body { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+    .article-body h2 { font-size: 24px; font-weight: 800; color: #11233d; margin: 40px 0 16px; padding-left: 14px; border-left: 4px solid #1d6cf2; }
+    .article-body h3 { font-size: 19px; font-weight: 700; color: #1d6cf2; margin: 28px 0 12px; }
+    .article-body p { font-size: 16px; line-height: 1.9; margin-bottom: 18px; color: #314a68; }
+    .highlight-box { background: linear-gradient(135deg, #f0f7ff, #e6f0ff); border-left: 4px solid #1d6cf2; padding: 20px 24px; margin: 28px 0; border-radius: 0 12px 12px 0; font-size: 16px; line-height: 1.8; }
+    .highlight-box strong { color: #1d6cf2; }
+    .warning-box { background: #fff8f0; border-left: 4px solid #f39c12; padding: 20px 24px; margin: 28px 0; border-radius: 0 12px 12px 0; }
+    .warning-box strong { color: #e67e22; }
+    .compare-table { width: 100%; border-collapse: collapse; margin: 28px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+    .compare-table th { background: #1d6cf2; color: #fff; padding: 14px 18px; text-align: left; font-size: 15px; }
+    .compare-table td { padding: 14px 18px; font-size: 15px; border-bottom: 1px solid #f0f4f8; color: #314a68; }
+    .compare-table tr:nth-child(even) td { background: #f8fbff; }
+    .compare-table .bad { color: #e74c3c; font-weight: 700; }
+    .compare-table .good { color: #27ae60; font-weight: 700; }
+    .brain-wave { display: flex; gap: 16px; margin: 28px 0; flex-wrap: wrap; }
+    .wave-card { flex: 1; min-width: 140px; background: #fff; border: 1px solid #dce8f6; border-radius: 16px; padding: 20px; text-align: center; }
+    .wave-card .wave-name { font-size: 22px; font-weight: 900; color: #1d6cf2; }
+    .wave-card .wave-hz { font-size: 13px; color: #59708e; margin: 4px 0; }
+    .wave-card .wave-state { font-size: 14px; color: #314a68; font-weight: 600; }
+    .wave-card.active { background: linear-gradient(135deg, #1d6cf2, #0a3d8f); color: #fff; border-color: transparent; }
+    .wave-card.active .wave-name, .wave-card.active .wave-hz, .wave-card.active .wave-state { color: #fff; }
+    .step-list { counter-reset: step; margin: 28px 0; }
+    .step-item { display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start; }
+    .step-num { width: 36px; height: 36px; background: #1d6cf2; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 16px; flex-shrink: 0; }
+    .step-content h4 { margin: 0 0 6px; font-size: 16px; color: #11233d; }
+    .step-content p { margin: 0; font-size: 15px; color: #59708e; line-height: 1.7; }
+    .forget-curve { background: #fff; border: 1px solid #dce8f6; border-radius: 16px; padding: 24px; margin: 28px 0; }
+    .forget-curve h4 { margin: 0 0 16px; color: #11233d; font-size: 16px; }
+    .curve-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .curve-label { width: 80px; font-size: 13px; color: #59708e; text-align: right; flex-shrink: 0; }
+    .curve-track { flex: 1; background: #f0f4f8; border-radius: 999px; height: 20px; overflow: hidden; }
+    .curve-fill { height: 100%; border-radius: 999px; display: flex; align-items: center; padding-left: 10px; font-size: 12px; color: #fff; font-weight: 700; }
+    .curve-fill.bad { background: linear-gradient(90deg, #e74c3c, #c0392b); }
+    .curve-fill.good { background: linear-gradient(90deg, #27ae60, #1e8449); }
+    .cta-section { background: linear-gradient(135deg, #1d6cf2, #0a3d8f); border-radius: 20px; padding: 40px; text-align: center; margin: 48px 0 0; color: #fff; }
+    .cta-section h3 { font-size: 24px; font-weight: 800; margin: 0 0 12px; }
+    .cta-section p { opacity: 0.9; margin: 0 0 24px; font-size: 15px; }
+    .cta-btn { display: inline-block; background: #fff; color: #1d6cf2; font-weight: 800; font-size: 16px; padding: 14px 36px; border-radius: 999px; text-decoration: none; }
+    .tag { display: inline-flex; padding: 5px 14px; border-radius: 999px; background: #eef6ff; color: #1d6cf2; font-size: 13px; font-weight: 700; margin-right: 8px; }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <div class="brand-mark">AI</div>
+      <div><div class="brand-title">AI脑波英语</div><div class="brand-sub">把单词"存入"大脑</div></div>
+    </a>
+    <nav class="nav">
+      <a href="../index.html">首页</a>
+      <a href="../principle.html">核心原理</a>
+      <a href="../courses.html">课程体系</a>
+      <a href="../cases.html">成功案例</a>
+      <a href="../safety.html">安全认证</a>
+      <a href="../insights.html" class="active">资讯</a>
+      <a href="../partner.html">机构合作</a>
+      <a href="../contact.html">联系我们</a>
+    </nav>
+    <div class="header-cta">
+      <a class="button button-primary" href="../contact.html">立即咨询</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="article-hero">
+    <div class="container">
+      <div style="max-width:800px; margin:0 auto; padding:0 20px;">
+        <div style="margin-bottom:16px;">
+          <span class="tag" style="background:rgba(255,255,255,0.2); color:#fff;">方法科普</span>
+          <span style="color:rgba(255,255,255,0.7); font-size:13px;">2026-03-31</span>
+        </div>
+        <h1>为什么背单词总是忘？<br>不是你笨，是方法错了</h1>
+        <p style="opacity:0.85; font-size:16px; margin:0;">短时记忆 vs 长期记忆 · θ波原理 · 遗忘曲线</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-body">
+
+    <p style="font-size:18px; color:#11233d; font-weight:600;">你有没有这种经历：昨天背了30个单词，今天测试，能想起来的不超过10个？</p>
+
+    <p>这不是你的记忆力有问题。这是你的大脑在正常工作——只是你用的方法，根本没有触发大脑的长期记忆机制。</p>
+
+    <h2>大脑的两个"储存区"</h2>
+
+    <p>要理解为什么背单词总是忘，先要了解大脑处理信息的两个区域：</p>
+
+    <h3>短时记忆（工作记忆）</h3>
+    <p>容量极小，只能同时保存7±2个信息单元，持续时间约15-30秒。你背单词时，信息首先进入这里。如果没有经过"编码"进入长期记忆，睡一觉就清空了。</p>
+
+    <h3>长期记忆（海马体→皮层）</h3>
+    <p>容量几乎无限，可以保存数十年。但信息要进入长期记忆，需要满足特定条件：情绪激活、重复强化、或者——大脑处于特定的神经振荡状态。</p>
+
+    <div class="warning-box">
+      <strong>关键问题：</strong>传统背单词（看书、用APP刷卡片）产生的信息，绝大多数只进入了短时记忆，从未真正"存入"大脑。这就是为什么你背了三年，还是记不住。
+    </div>
+
+    <h2>遗忘曲线：你的努力在哪里消失</h2>
+
+    <p>德国心理学家艾宾浩斯在1885年就发现了遗忘规律。传统方法背单词，遗忘速度惊人：</p>
+
+    <div class="forget-curve">
+      <h4>📉 传统方法：背完后的记忆保留率</h4>
+      <div class="curve-bar">
+        <div class="curve-label">1小时后</div>
+        <div class="curve-track"><div class="curve-fill bad" style="width:44%">44%</div></div>
+      </div>
+      <div class="curve-bar">
+        <div class="curve-label">1天后</div>
+        <div class="curve-track"><div class="curve-fill bad" style="width:26%">26%</div></div>
+      </div>
+      <div class="curve-bar">
+        <div class="curve-label">1周后</div>
+        <div class="curve-track"><div class="curve-fill bad" style="width:23%">23%</div></div>
+      </div>
+      <div class="curve-bar">
+        <div class="curve-label">1个月后</div>
+        <div class="curve-track"><div class="curve-fill bad" style="width:21%">21%</div></div>
+      </div>
+    </div>
+
+    <div class="forget-curve" style="margin-top:0;">
+      <h4>📈 θ波深度记忆：年遗忘率低至5%</h4>
+      <div class="curve-bar">
+        <div class="curve-label">1个月后</div>
+        <div class="curve-track"><div class="curve-fill good" style="width:92%">92%</div></div>
+      </div>
+      <div class="curve-bar">
+        <div class="curve-label">3个月后</div>
+        <div class="curve-track"><div class="curve-fill good" style="width:88%">88%</div></div>
+      </div>
+      <div class="curve-bar">
+        <div class="curve-label">6个月后</div>
+        <div class="curve-track"><div class="curve-fill good" style="width:85%">85%</div></div>
+      </div>
+      <div class="curve-bar">
+        <div class="curve-label">1年后</div>
+        <div class="curve-track"><div class="curve-fill good" style="width:95%">≥95%</div></div>
+      </div>
+    </div>
+
+    <h2>θ波：大脑的"深度存储模式"</h2>
+
+    <p>人类大脑会产生不同频率的神经振荡，每种状态对应不同的认知功能：</p>
+
+    <div class="brain-wave">
+      <div class="wave-card">
+        <div class="wave-name">β波</div>
+        <div class="wave-hz">13-30 Hz</div>
+        <div class="wave-state">清醒专注<br>逻辑思维</div>
+      </div>
+      <div class="wave-card">
+        <div class="wave-name">α波</div>
+        <div class="wave-hz">8-13 Hz</div>
+        <div class="wave-state">放松清醒<br>创意状态</div>
+      </div>
+      <div class="wave-card active">
+        <div class="wave-name">θ波 ✦</div>
+        <div class="wave-hz">4-8 Hz</div>
+        <div class="wave-state">深度记忆<br>长期存储</div>
+      </div>
+      <div class="wave-card">
+        <div class="wave-name">δ波</div>
+        <div class="wave-hz">0.5-4 Hz</div>
+        <div class="wave-state">深度睡眠<br>身体修复</div>
+      </div>
+    </div>
+
+    <p>θ波（4-8Hz）是大脑海马体最活跃的状态，也是长期记忆形成效率最高的时刻。神经科学研究表明，在θ波状态下输入的信息，被编码进长期记忆的概率是普通清醒状态的<strong>3-5倍</strong>。</p>
+
+    <div class="highlight-box">
+      <strong>关键发现：</strong>θ波状态自然出现在两种情况——深度冥想，以及介于清醒和睡眠之间的"入睡前"状态。AI脑波英语通过特定频率的音频，人工引导大脑进入θ波状态，让单词直接"存入"长期记忆。
+    </div>
+
+    <h2>传统方法 vs θ波方法：对比</h2>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>维度</th>
+          <th>传统背单词</th>
+          <th>θ波深度记忆</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>记忆层级</td>
+          <td class="bad">短时记忆</td>
+          <td class="good">长期记忆</td>
+        </tr>
+        <tr>
+          <td>每小时记忆量</td>
+          <td class="bad">20-30个（次日忘80%）</td>
+          <td class="good">40-60个（年遗忘率低至5%）</td>
+        </tr>
+        <tr>
+          <td>需要复习次数</td>
+          <td class="bad">7-10次才能巩固</td>
+          <td class="good">1-2次即可长期保留</td>
+        </tr>
+        <tr>
+          <td>大脑状态</td>
+          <td class="bad">β波（浅层处理）</td>
+          <td class="good">θ波（深度编码）</td>
+        </tr>
+        <tr>
+          <td>1年后保留率</td>
+          <td class="bad">约5-10%</td>
+          <td class="good">≥95%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>为什么你背了三年还是忘？</h2>
+
+    <p>现在你应该明白了。你用APP背单词，大脑处于β波状态——高度清醒，逻辑活跃，但这恰恰不是长期记忆形成的最佳状态。</p>
+
+    <p>信息进入短时记忆，你感觉"记住了"。但没有经过θ波状态的深度编码，这些信息在睡眠中被大脑"清理"掉了。</p>
+
+    <p>这不是你的错。这是大脑的工作机制。你只是一直在用错误的工具，和大脑的天然规律对抗。</p>
+
+    <h2>正确的方法是什么？</h2>
+
+    <div class="step-list">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>引导大脑进入θ波状态</h4>
+          <p>通过特定频率的双耳节拍音频（Binaural Beats），引导大脑从β波降至θ波，通常需要10-15分钟。</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>在θ波状态下输入词汇</h4>
+          <p>此时海马体活跃，信息直接进入长期记忆编码通道，记忆效率是普通状态的3-5倍。</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>AI精准复习调度</h4>
+          <p>根据每个人的遗忘曲线，AI系统在最佳时间点推送复习，用最少的复习次数实现最高的保留率。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <strong>结论：</strong>背单词总是忘，不是你笨，是你的大脑从来没有进入过正确的记忆状态。改变方法，才能改变结果。
+    </div>
+
+    <div class="cta-section">
+      <h3>🧠 测测你的真实词汇量</h3>
+      <p>免费词汇测试 + 个性化记忆方案<br>北京 · 苏州 · 石家庄 · 长春 校区均可预约</p>
+      <a class="cta-btn" href="../contact.html">预约免费测试 →</a>
+    </div>
+
+  </div>
+</main>
+
+<footer style="background:#11233d; color:#8fa8c8; padding:40px 0; margin-top:60px;">
+  <div class="container" style="max-width:800px; text-align:center;">
+    <p style="margin:0 0 8px; font-size:15px; color:#fff; font-weight:700;">AI脑波英语</p>
+    <p style="margin:0 0 16px; font-size:13px;">北京 · 苏州 · 石家庄 · 长春</p>
+    <p style="margin:0; font-size:12px;">© 2026 AI脑波英语 版权所有 | <a href="../contact.html" style="color:#8fa8c8;">联系我们</a> | <a href="../index.html" style="color:#8fa8c8;">返回首页</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
