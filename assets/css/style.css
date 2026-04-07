@@ -238,3 +238,30 @@ img, video { display: block; max-width: 100%; }
 .insights-hero{padding:54px 0 22px}.insights-hero p{max-width:860px}.lang-inline{display:inline-flex;align-items:center;gap:10px;margin-left:10px}.text-right{text-align:right}
 .footer-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}.footer-links a{color:var(--muted);font-size:14px}
 @media (max-width:1080px){.article-grid,.article-layout,.feature-post,.post-list{grid-template-columns:1fr}.nav-tools{display:none}.lang-inline{margin-left:0}}
+
+
+/* official update: insights + principle + franchise */
+.insight-side-card{display:flex;flex-direction:column;gap:14px;justify-content:space-between}
+.insight-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.insight-feature-row{margin-top:10px}
+.news-post-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.news-card{padding:24px;min-height:240px}
+.news-card h3{font-size:22px;line-height:1.28}
+.news-card .link{display:inline-flex;align-items:center;gap:6px}
+.principle-key-grid .card,.principle-flow-grid .card{height:100%}
+.compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.pricing-card{background:rgba(255,255,255,.98);border:1px solid rgba(220,232,246,.92);border-radius:28px;padding:26px;box-shadow:var(--shadow)}
+.pricing-card.featured{background:linear-gradient(180deg,#ffffff,#f7fbff);border-color:#cfe3ff}
+.pricing-head h3{margin:8px 0 8px;font-size:30px;line-height:1.12}
+.pricing-head p{margin:0;color:var(--muted)}
+.pricing-table{display:grid;gap:10px;margin-top:18px}
+.pricing-row{display:flex;justify-content:space-between;gap:18px;padding:14px 16px;border-radius:18px;background:var(--surface-2);border:1px solid var(--line)}
+.pricing-row span{color:var(--muted)}
+.pricing-row strong{color:var(--deep);text-align:right}
+.timeline-list{display:grid;gap:14px}
+.timeline-item{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line)}
+.timeline-item:first-child{border-top:none;padding-top:0}
+.timeline-item span{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:999px;background:#eaf4ff;color:var(--primary);font-weight:800;flex:0 0 auto}
+.timeline-item strong{display:block;margin-bottom:4px;font-size:17px}
+.timeline-item p{margin:0;color:var(--muted)}
+@media (max-width:1080px){.compare-grid,.insight-mini-grid,.news-post-list{grid-template-columns:1fr}}
