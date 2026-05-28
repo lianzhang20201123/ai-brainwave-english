@@ -483,3 +483,5 @@ img, video { display: block; max-width: 100%; }
 body:has(.hero-v2) a[href="investors.html"] { display: none !important; }
 
 body:has(.hero-v2) a[href=investors.html] { display: none !important; }
+
+body:has(.hero-v2) a[href*=investors] { display: none !important; }
