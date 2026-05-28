@@ -36,3 +36,6 @@ en/courses.html
 en/cases.html
 en/safety.html
 en/contact.html
+investors.html
+news/learning-cabin-process.html
+sitemap.xml
