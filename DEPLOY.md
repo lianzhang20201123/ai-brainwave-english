@@ -2,7 +2,7 @@
 
 ## 1. GitHub
 
-在项目目录执行：
+项目目录已经可以作为静态网站仓库使用。首次绑定真实 GitHub 仓库时，在项目目录执行：
 
 ```bash
 git init
@@ -12,6 +12,15 @@ git branch -M main
 git remote add origin https://github.com/你的用户名/你的仓库名.git
 git push -u origin main
 ```
+
+当前需要把 `https://github.com/你的用户名/你的仓库名.git` 替换成真实仓库地址。若仓库已接入 Vercel，推送到 `main` 后会自动更新网站。
+
+### 每日 SEO/GEO 内容发布节奏
+
+- 新文章建议放在 `news/` 目录，文件名使用英文短横线 URL。
+- 新文章需要同步加入 `insights.html` 的文章入口。
+- 新文章需要同步加入 `sitemap.xml`，便于搜索引擎发现。
+- 投资人、机构合作、案例页中的数据表达应以已授权公开口径为准，不把试点说成全国复制结果。
 
 ## 2. Vercel
 
