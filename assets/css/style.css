@@ -481,3 +481,5 @@ img, video { display: block; max-width: 100%; }
 
 /* Hide investor entry from the homepage navigation. */
 body:has(.hero-v2) a[href="investors.html"] { display: none !important; }
+
+body:has(.hero-v2) a[href=investors.html] { display: none !important; }
