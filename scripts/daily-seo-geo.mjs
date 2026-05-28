@@ -150,30 +150,59 @@ const topics = [
   }
 ];
 
-const topic = topics[((seed % topics.length) + topics.length) % topics.length];
-const datedSlug = `${today}-${topic.slug}`;
-const zhPath = path.join(root, 'news', `${datedSlug}.html`);
-const enPath = path.join(root, 'en', 'news', `${datedSlug}.html`);
+const dailyTopics = pickDailyTopics(seed);
+const published = [];
 
-if (fs.existsSync(zhPath) || fs.existsSync(enPath)) {
-  console.log(`Daily article already exists for ${today}: ${datedSlug}`);
-  process.exit(0);
+for (const topic of dailyTopics) {
+  const datedSlug = `${today}-${topic.slug}`;
+  const zhPath = path.join(root, 'news', `${datedSlug}.html`);
+  const enPath = path.join(root, 'en', 'news', `${datedSlug}.html`);
+
+  if (fs.existsSync(zhPath) || fs.existsSync(enPath)) {
+    published.push({ slug: datedSlug, skipped: true });
+    continue;
+  }
+
+  const spec = buildSpec(topic, datedSlug, today);
+  writeJson(path.join(root, 'content-specs', `${datedSlug}.json`), spec);
+  writeFile(zhPath, renderZh(spec));
+  writeFile(enPath, renderEn(spec));
+  updateSitemap(spec);
+  prependHubLink('insights.html', spec.zh.title, spec.zh.description, `news/${spec.slug}.html`, topic.lane);
+  prependHubLink(path.join('en', 'insights.html'), spec.en.title, spec.en.description, `news/${spec.slug}.html`, topic.lane);
+  published.push({
+    slug: spec.slug,
+    lane: topic.lane,
+    created: [`news/${spec.slug}.html`, `en/news/${spec.slug}.html`],
+    keywords: [topic.zhKeyword, topic.enKeyword]
+  });
 }
-
-const spec = buildSpec(topic, datedSlug, today);
-writeJson(path.join(root, 'content-specs', `${datedSlug}.json`), spec);
-writeFile(zhPath, renderZh(spec));
-writeFile(enPath, renderEn(spec));
-updateSitemap(spec);
-prependHubLink('insights.html', spec.zh.title, spec.zh.description, `news/${spec.slug}.html`, topic.lane);
-prependHubLink(path.join('en', 'insights.html'), spec.en.title, spec.en.description, `news/${spec.slug}.html`, topic.lane);
 
 console.log(JSON.stringify({
   date: today,
-  slug: spec.slug,
-  created: [`news/${spec.slug}.html`, `en/news/${spec.slug}.html`],
-  keywords: [topic.zhKeyword, topic.enKeyword]
+  quota: '3 bilingual topic pairs per day',
+  published
 }, null, 2));
+
+function pickDailyTopics(offset) {
+  const groups = [
+    ['parent', 'method', 'exam'],
+    ['parent', 'institution', 'global'],
+    ['method', 'exam', 'faq'],
+    ['parent', 'institution', 'faq'],
+    ['exam', 'global', 'method'],
+    ['parent', 'exam', 'institution'],
+    ['method', 'global', 'faq']
+  ];
+  const lanes = groups[((offset % groups.length) + groups.length) % groups.length];
+  const used = new Set();
+  return lanes.map((lane, index) => {
+    const pool = topics.filter((topic) => topic.lane === lane && !used.has(topic.slug));
+    const topic = pool[Math.abs(offset + index * 3) % pool.length];
+    used.add(topic.slug);
+    return topic;
+  });
+}
 
 function buildSpec(t, slug, date) {
   return {
