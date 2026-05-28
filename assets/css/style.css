@@ -485,3 +485,5 @@ body:has(.hero-v2) a[href="investors.html"] { display: none !important; }
 body:has(.hero-v2) a[href=investors.html] { display: none !important; }
 
 body:has(.hero-v2) a[href*=investors] { display: none !important; }
+
+a[href*=investors] { display: none !important; }
