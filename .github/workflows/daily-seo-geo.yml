@@ -1,0 +1,38 @@
+name: Daily SEO GEO content
+
+on:
+  schedule:
+    - cron: "20 23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate daily SEO GEO pages
+        run: node scripts/daily-seo-geo.mjs
+
+      - name: Commit and push when content changed
+        run: |
+          if git diff --quiet; then
+            echo "No new content to publish."
+            exit 0
+          fi
+          git config user.name "ai-naobo-content-bot"
+          git config user.email "actions@github.com"
+          git add content-specs news en/news insights.html en/insights.html sitemap.xml
+          git commit -m "Daily SEO GEO content $(date -u +%F)"
+          git push
