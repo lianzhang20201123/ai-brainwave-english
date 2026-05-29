@@ -514,7 +514,7 @@ function prependHubLink(file, title, description, href, lane) {
   const marker = '<div class="post-list news-post-list">';
   const idx = html.indexOf(marker);
   if (idx === -1) return;
-  const insertAt = idx + marker.length + 1;
+  const insertAt = idx + marker.length;
   fs.writeFileSync(full, html.slice(0, insertAt) + card + html.slice(insertAt));
 }
 
