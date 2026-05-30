@@ -47,10 +47,10 @@ function renderZh() {
   <link rel="stylesheet" href="../assets/css/style.css?v=contractscore">
   <script type="application/ld+json">${jsonLd(articleLd(shared.zhTitle, shared.zhDesc, url, 'AI脑波英语'))}</script>
   <script type="application/ld+json">${jsonLd(faqLd([
-    ['AI脑波英语的保提分是不是人人最高提30分？', '不是。每个学生的承诺目标不同，必须先看基础、配合度、训练时间和考试周期。最高目标只适合起点较低、配合度高、训练周期足够的学生。'],
+    ['AI脑波英语的保提分是不是人人承诺一样？', '不是。每个学生的承诺目标不同，必须先看基础、配合度、训练时间和考试周期。公开页面不承诺固定分数，具体目标在测评和到店沟通后确定。'],
     ['“有效果再付款”的完整规则会公开吗？', '完整细节不作为公开页面宣传，通常在家长到店咨询、测评和签约沟通过程中说明。官网只解释原则和交付流程。'],
     ['学习舱是不是孩子躺着就能学会？', '不是。学习舱必须配合前测、进舱前读熟、舱内节律化输入、出舱检测、复现巩固和考试专项训练。'],
-    ['目前有哪些学习舱落地？', '目前已规划或落地的学习舱包括长春6个、北京6个、石家庄4个、兰州6个，具体开放体验以当地校区安排为准。']
+    ['目前有哪些城市可以体验？', '目前 AI脑波英语正在长春、北京、石家庄、兰州等城市推进学习舱体验与交付，具体开放体验以当地校区安排为准。']
   ]))}</script>
 </head>
 <body>
@@ -66,7 +66,7 @@ ${zhHeader()}
       <aside class="article-card insight-side-card">
         <div class="eyebrow">先测评，再承诺</div>
         <h3>不是每个孩子都承诺一样的分数</h3>
-        <p>每个学生的基础、时间、配合度和目标不同。最高可承诺约30分，通常只适合起点较低、配合度高、训练周期足够的学生。</p>
+        <p>每个学生的基础、时间、配合度和目标不同。公开页面不承诺固定分数，具体目标在测评和到店沟通后确定。</p>
         <a class="button button-primary" href="../contact.html">预约入学测评</a>
       </aside>
     </div>
@@ -84,7 +84,7 @@ ${zhHeader()}
         <li>试卷分析：看失分集中在基础题、阅读题、作文还是时间分配。</li>
       </ul>
       <h2>第二步：承诺目标因人而异</h2>
-      <p>保提分协议不能一刀切。起点低、配合度高、训练时间充足的学生，目标可以更积极；基础已经较高、距离考试很近、出勤不稳定的学生，目标就要更谨慎。最高承诺不等于人人适用。</p>
+      <p>保提分协议不能一刀切。起点低、配合度高、训练时间充足的学生，目标可以更积极；基础已经较高、距离考试很近、出勤不稳定的学生，目标就要更谨慎。公开页面不写固定提分数，避免家长误解为人人适用。</p>
       <h2>第三步：训练路径必须完整</h2>
       <p>英语想提分，通常不能只靠刷题，也不能只靠学习舱。比较稳的顺序是：音标/自然拼读先补稳，词汇集中突破，再进入语法、听力、阅读、写作和刷卷复盘。</p>
       <ul>
@@ -95,19 +95,19 @@ ${zhHeader()}
       </ul>
       <h2>第四步：阶段验收比一句承诺更重要</h2>
       <p>家长真正需要看的不是一句口号，而是孩子每个阶段有没有变化：词汇是否能复现，阅读是否更顺，语法错题是否减少，作文是否有词有句，套卷分数是否稳定。</p>
-      <h2>目前学习舱布局</h2>
-      <p>目前 AI脑波英语已在长春、北京、石家庄、兰州等地推进学习舱体验与交付。其中长春6个舱，北京6个舱，石家庄4个舱，兰州6个舱。具体体验安排以当地校区实际开放为准。</p>
+      <h2>目前可预约城市</h2>
+      <p>目前 AI脑波英语正在长春、北京、石家庄、兰州等地推进学习舱体验与交付。入学测评免费，但需要提前预约；平日可预约下午4点以后到晚9点，周末可预约早8点到晚9点，具体以当地校区安排为准。</p>
       <h2>关于合作样板</h2>
       <p>AI脑波英语已进入华图教育吉林长春总部校区开展合作推进。对外沟通可以说明合作事实，但仍应以实际样板验证、交付数据和家长反馈为基础，不把局部合作直接表述为全国复制结果。</p>
       <h2>常见问题</h2>
       <div class="faq">
         <details><summary>完整退费规则会在官网公开吗？</summary><p>不会在官网公开完整细节。官网只解释原则、流程和边界，具体规则在到店测评、咨询和签约沟通中说明。</p></details>
-        <details><summary>训练3到5天就一定能成交吗？</summary><p>3到5天体验的目标是让家长看到检测变化和孩子适应度。转化率是内部目标，需要实际跑出数据后再对外表达。</p></details>
+        <details><summary>3到5天体验怎么收费？</summary><p>体验前需缴500元保证金。不满意可随时退费离开，不收取费用；如果家长认可效果，再补齐正式费用。</p></details>
         <details><summary>真实案例可以宣传吗？</summary><p>可以做匿名化展示，例如遮挡面部、隐藏真实姓名和敏感信息。重要案例建议后续补充书面授权。</p></details>
       </div>
       <div class="article-cta">
         <h2>下一步</h2>
-        <p>如果想知道孩子是否适合签保提分协议，建议先预约一次入学测评。先看基础，再定目标，再决定训练周期。</p>
+      <p>如果想知道孩子是否适合签保提分协议，建议先预约一次30分钟免费入学测评。先看基础，再定目标，再决定训练周期。</p>
         <div class="hero-actions small-actions"><a class="button button-primary" href="../contact.html">预约测评</a><a class="button button-secondary" href="../courses.html">查看课程体系</a></div>
       </div>
     </div>
@@ -141,7 +141,7 @@ function renderEn() {
     ['Does AI Brainwave English promise the same score increase to every student?', 'No. The target depends on baseline, cooperation level, available training time and exam timeline. A higher target is suitable only for selected students after assessment.'],
     ['Are the full pay-after-effect details published online?', 'No. The website explains the principle and delivery workflow. Detailed terms are discussed during assessment and consultation.'],
     ['Is the learning cabin a sleep-and-learn method?', 'No. It is part of a structured process that includes assessment, preparation, guided input, exit testing, review and exam-specific practice.'],
-    ['Where are learning cabins being developed?', 'Current learning cabin deployment includes Changchun, Beijing, Shijiazhuang and Lanzhou. Local availability depends on each center.']
+    ['Where can families book an assessment?', 'AI Brainwave English is developing learning cabin delivery in Changchun, Beijing, Shijiazhuang and Lanzhou. Local availability depends on each center.']
   ]))}</script>
 </head>
 <body>
@@ -177,8 +177,8 @@ ${enHeader()}
         <li>After cabin: exit testing, records and review.</li>
         <li>Follow-up: grammar, listening, reading, writing and exam paper practice.</li>
       </ul>
-      <h2>Learning cabin deployment</h2>
-      <p>AI Brainwave English is developing learning cabin delivery in Changchun, Beijing, Shijiazhuang and Lanzhou. Current capacity includes 6 cabins in Changchun, 6 in Beijing, 4 in Shijiazhuang and 6 in Lanzhou, subject to local center availability.</p>
+      <h2>Assessment availability</h2>
+      <p>AI Brainwave English is developing learning cabin delivery in Changchun, Beijing, Shijiazhuang and Lanzhou. The entrance assessment is free and reservation-based. Weekday appointments are generally available after 4:00 PM until 9:00 PM, and weekend appointments from 8:00 AM to 9:00 PM, subject to local center schedules.</p>
       <h2>Partnership note</h2>
       <p>AI Brainwave English has entered cooperation development with Huatu Education Jilin Changchun headquarters campus. Public communication should still be based on actual pilot progress, delivery data and parent feedback.</p>
       <h2>Frequently asked questions</h2>
