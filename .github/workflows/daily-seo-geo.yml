@@ -25,6 +25,9 @@ jobs:
       - name: Generate daily SEO GEO pages
         run: node scripts/daily-seo-geo.mjs
 
+      - name: Validate generated site
+        run: node scripts/validate-site.mjs
+
       - name: Commit and push when content changed
         run: |
           if git diff --quiet; then
