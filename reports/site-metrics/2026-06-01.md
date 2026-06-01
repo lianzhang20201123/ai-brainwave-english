@@ -1,0 +1,85 @@
+# AI脑波英语官网数据日报
+
+日期：2026-06-01
+
+## 1. 发布与SEO/GEO健康
+
+- HTML页面总数：146
+- Sitemap URL数：84
+- 中文文章数：57
+- 英文文章数：31
+- 中文专题页数：9
+- 英文专题页数：9
+- 结构/收录准备问题数：203
+
+## 2. 最新中文文章
+
+- news/2026-06-01-who-is-not-suitable-for-ai-brainwave-english.html
+- news/2026-06-01-middle-school-english-vocabulary-before-grammar.html
+- news/2026-06-01-education-center-ai-english-cabin-pilot.html
+- news/2026-05-31-guaranteed-score-improvement-contract-explained.html
+- news/2026-05-31-gaokao-english-3500-words-to-reading.html
+- news/2026-05-31-from-vocabulary-to-writing-output.html
+- news/2026-05-31-deposit-trial-effect-checklist.html
+- news/2026-05-30-education-center-ai-english-cabin-pilot.html
+- news/2026-05-30-china-edtech-ai-vocabulary-training-investor-note.html
+- news/2026-05-30-child-remembers-words-but-cannot-use-them.html
+- news/2026-05-29-zhongkao-english-score-improvement-workflow.html
+- news/2026-05-29-phonics-pronunciation-vocabulary-training-path.html
+
+## 3. Latest English Articles
+
+- en/news/2026-06-01-who-is-not-suitable-for-ai-brainwave-english.html
+- en/news/2026-06-01-middle-school-english-vocabulary-before-grammar.html
+- en/news/2026-06-01-education-center-ai-english-cabin-pilot.html
+- en/news/2026-05-31-guaranteed-score-improvement-contract-explained.html
+- en/news/2026-05-31-gaokao-english-3500-words-to-reading.html
+- en/news/2026-05-31-from-vocabulary-to-writing-output.html
+- en/news/2026-05-31-deposit-trial-effect-checklist.html
+- en/news/2026-05-30-education-center-ai-english-cabin-pilot.html
+- en/news/2026-05-30-china-edtech-ai-vocabulary-training-investor-note.html
+- en/news/2026-05-30-child-remembers-words-but-cannot-use-them.html
+- en/news/2026-05-29-zhongkao-english-score-improvement-workflow.html
+- en/news/2026-05-29-phonics-pronunciation-vocabulary-training-path.html
+
+## 4. 需要继续修复的SEO基础问题
+
+- 404.html: missing from sitemap.xml
+- article-007.html: missing canonical
+- article-007.html: missing from sitemap.xml
+- brainwave-principle-explained.html: missing from sitemap.xml
+- brainwave-safety-explained.html: missing from sitemap.xml
+- cet-vocabulary-strategy.html: missing from sitemap.xml
+- en/404.html: missing from sitemap.xml
+- en/index.html: missing from sitemap.xml
+- en/news/_template.html: news page missing Article JSON-LD
+- en/news/_template.html: news page missing FAQPage JSON-LD
+- en/news/_template.html: missing from sitemap.xml
+- en/news/before-the-free-assessment.html: news page missing Article JSON-LD
+- en/news/before-the-free-assessment.html: news page missing FAQPage JSON-LD
+- en/news/before-the-free-assessment.html: missing from sitemap.xml
+- en/news/best-way-for-kids-to-memorize-words.html: news page missing Article JSON-LD
+- en/news/best-way-for-kids-to-memorize-words.html: news page missing FAQPage JSON-LD
+- en/news/cet-vocabulary-plan.html: news page missing Article JSON-LD
+- en/news/cet-vocabulary-plan.html: news page missing FAQPage JSON-LD
+- en/news/cet-vocabulary-plan.html: missing from sitemap.xml
+- en/news/child-forgets-english-words.html: news page missing Article JSON-LD
+- en/news/child-forgets-english-words.html: news page missing FAQPage JSON-LD
+- en/news/english-score-low-because-of-vocabulary.html: news page missing Article JSON-LD
+- en/news/english-score-low-because-of-vocabulary.html: news page missing FAQPage JSON-LD
+- en/news/english-words-forget-after-memorizing.html: news page missing Article JSON-LD
+- en/news/english-words-forget-after-memorizing.html: news page missing FAQPage JSON-LD
+- en/news/high-school-vocabulary-gap.html: news page missing Article JSON-LD
+- en/news/high-school-vocabulary-gap.html: news page missing FAQPage JSON-LD
+- en/news/how-to-improve-zhongkao-english-fast.html: news page missing Article JSON-LD
+- en/news/how-to-improve-zhongkao-english-fast.html: news page missing FAQPage JSON-LD
+- en/news/how-to-prepare-gaokao-vocabulary.html: news page missing Article JSON-LD
+- 另有 50 个问题在JSON报告中。
+
+## 5. 还需接入的数据源
+
+- 官网访问量、来源渠道、页面停留：需接入 GA4 / Plausible / 百度统计之一。
+- Google搜索词、展示、点击、平均排名：需接入 Google Search Console。
+- 百度搜索表现：需接入百度搜索资源平台或百度统计。
+- 扫码线索数：需用不同二维码/UTM参数区分家长、机构、投资人、海外合作来源。
+

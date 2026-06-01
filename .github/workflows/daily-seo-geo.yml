@@ -28,6 +28,9 @@ jobs:
       - name: Validate generated site
         run: node scripts/validate-site.mjs
 
+      - name: Generate site metrics report
+        run: node scripts/site-metrics-report.mjs
+
       - name: Commit and push when content changed
         run: |
           if git diff --quiet; then
@@ -36,6 +39,6 @@ jobs:
           fi
           git config user.name "ai-naobo-content-bot"
           git config user.email "actions@github.com"
-          git add content-specs news en/news insights.html en/insights.html sitemap.xml
+          git add content-specs news en/news insights.html en/insights.html sitemap.xml reports/site-metrics
           git commit -m "Daily SEO GEO content $(date -u +%F)"
           git push
