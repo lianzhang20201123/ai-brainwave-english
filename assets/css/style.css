@@ -487,3 +487,115 @@ body:has(.hero-v2) a[href=investors.html] { display: none !important; }
 body:has(.hero-v2) a[href*=investors] { display: none !important; }
 
 a[href*=investors] { display: none !important; }
+
+/* 2026-06-06 homepage polish */
+body {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.86), rgba(244,248,246,.76) 38%, #f4f8f6 100%),
+    #f4f8f6;
+}
+.hero-polished {
+  padding: 54px 0 34px;
+}
+.hero-polished .hero-v2-grid {
+  gap: 34px;
+}
+.hero-polished h1 {
+  font-size: clamp(46px, 5.6vw, 80px);
+  line-height: 1.02;
+}
+.hero-polished .hero-text {
+  color: #29443f;
+  font-size: 20px;
+}
+.hero-polished .button,
+.hero-polished + .section .button,
+.mobile-sticky-cta a {
+  border-radius: 14px;
+}
+.hero-polished .hero-visual {
+  position: relative;
+  border-radius: 28px;
+  box-shadow: 0 30px 80px rgba(15, 51, 45, .16);
+}
+.hero-assurance {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+.hero-assurance span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #fff6e7;
+  border: 1px solid #f1dfbd;
+  color: #70501d;
+  font-size: 13px;
+  font-weight: 800;
+}
+.visual-note {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  color: #fff;
+  background: rgba(15, 51, 45, .78);
+  backdrop-filter: blur(10px);
+}
+.visual-note strong {
+  white-space: nowrap;
+  font-size: 15px;
+}
+.visual-note span {
+  color: rgba(255,255,255,.84);
+  font-size: 13px;
+  text-align: right;
+}
+.hero-polished .proof-strip {
+  margin-top: 18px;
+}
+.hero-polished .proof-strip div,
+.problem-card,
+.flow-step,
+.audience-card,
+.post-card,
+.article-card {
+  border-radius: 18px;
+}
+.hero-polished .proof-strip div {
+  background: rgba(255,255,255,.94);
+}
+.callout-dark {
+  background: linear-gradient(135deg, #0f332d, #16675d 58%, #34b49b);
+  box-shadow: 0 30px 80px rgba(15, 51, 45, .16);
+}
+.section-intro p {
+  max-width: 680px;
+}
+@media (max-width: 720px) {
+  .hero-polished h1 {
+    font-size: 40px;
+  }
+  .hero-polished .hero-text {
+    font-size: 17px;
+  }
+  .visual-note {
+    position: static;
+    display: block;
+    border-radius: 0;
+  }
+  .visual-note span {
+    display: block;
+    margin-top: 4px;
+    text-align: left;
+  }
+}
