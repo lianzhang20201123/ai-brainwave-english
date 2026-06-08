@@ -168,9 +168,19 @@ img, video { display: block; max-width: 100%; }
 .faq details p { margin: 12px 0 0; color: var(--muted); }
 .contact-wrap { display: grid; grid-template-columns: 1fr 380px; gap: 24px; align-items: stretch; }
 .qr-card { background: white; border: 1px solid var(--line); border-radius: 28px; padding: 20px; box-shadow: var(--shadow); text-align: center; }
-.qr-card img { width: min(100%, 240px); max-height: 300px; object-fit: contain; margin: 0 auto; border-radius: 18px; border: 1px solid var(--line); }
+.qr-card img {
+  width: min(100%, 260px);
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
 .qr-card h3 { margin: 16px 0 8px; font-size: 24px; }
 .qr-card p { margin: 0; color: var(--muted); }
+.qr-card { scroll-margin-bottom: 110px; }
 .footer { margin-top: 28px; padding: 28px 0 36px; border-top: 1px solid rgba(220,232,246,0.9); background: rgba(255,255,255,0.8); }
 .footer-inner { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
 .footer small { color: var(--muted); }
