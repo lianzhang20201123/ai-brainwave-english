@@ -1404,6 +1404,19 @@ body.home-conversion {
 .insights-hero .insight-mini-grid {
   display: none;
 }
+.insights-hero .insights-hero-media {
+  align-self: stretch;
+  display: grid;
+  grid-template-rows: minmax(320px, 1fr) auto;
+}
+.insights-hero .insights-hero-media img {
+  min-height: 320px;
+}
+.insights-hero .insights-hero-media .caption h3 {
+  font-size: clamp(20px, 2.1vw, 30px);
+  line-height: 1.18;
+  color: var(--ink);
+}
 @media (max-width: 1180px) {
   .home-conversion .conversion-hero-grid {
     grid-template-columns: 1fr;
