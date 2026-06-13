@@ -1,12 +1,33 @@
 {
   "date": "2026-06-07",
   "slug": "vocabulary-before-practice-papers",
-  "image": "assets/images/home-cabin-students.jpg",
+  "image": {
+    "src": "assets/images/home-cabin-students-mobile.jpg",
+    "altZh": "学生在AI脑波英语学习舱中进行词汇训练",
+    "altEn": "A student training vocabulary inside the AI Brainwave English learning cabin",
+    "captionZh": "真实训练场景：先测评，再进舱训练，出舱后立即检测和复现。",
+    "captionEn": "Real training context: assessment first, cabin training, then exit testing and recall review."
+  },
   "zh": {
     "title": "英语提分为什么要先解决词汇，而不是一上来刷卷子？",
     "description": "很多家长觉得单词可以自己背，但英语提分真正看的是词汇能不能转化到听力、阅读、写作和刷卷复盘。本文解释AI脑波英语为什么先测评、先解决音标和词汇，再做语法、听力、阅读、写作和刷卷。",
-    "keywords": ["英语提分", "背单词", "9.9元体验200词", "初高中英语", "阅读理解", "听力", "写作", "刷卷复盘", "AI脑波英语"],
-    "tags": ["家长问题", "词汇提分", "刷卷复盘", "2026-06-07"],
+    "keywords": [
+      "英语提分",
+      "背单词",
+      "9.9元体验200词",
+      "初高中英语",
+      "阅读理解",
+      "听力",
+      "写作",
+      "刷卷复盘",
+      "AI脑波英语"
+    ],
+    "tags": [
+      "家长问题",
+      "词汇提分",
+      "刷卷复盘",
+      "2026-06-07"
+    ],
     "lead": "如果孩子单词不会读、听不出、认不准、写不出，一上来刷卷子往往只是重复丢分。英语提分的第一步，不是把孩子推向更多题，而是先看词汇底座能不能支撑听力、阅读、写作和考试题型。",
     "sections": [
       {
@@ -99,8 +120,20 @@
   "en": {
     "title": "Why Vocabulary Should Come Before More Practice Papers in English Score Improvement",
     "description": "Parents often think students can memorize vocabulary alone. This article explains why vocabulary must become usable in listening, reading, writing and paper review before practice papers can produce better results.",
-    "keywords": ["English vocabulary training", "English score improvement", "ESL vocabulary", "practice papers", "AI English learning cabin", "AI Brainwave English"],
-    "tags": ["parent question", "vocabulary", "exam transfer", "2026-06-07"],
+    "keywords": [
+      "English vocabulary training",
+      "English score improvement",
+      "ESL vocabulary",
+      "practice papers",
+      "AI English learning cabin",
+      "AI Brainwave English"
+    ],
+    "tags": [
+      "parent question",
+      "vocabulary",
+      "exam transfer",
+      "2026-06-07"
+    ],
     "lead": "If students cannot read, recognize, hear, spell and recall words, doing more practice papers often repeats the same mistakes. English score improvement usually needs vocabulary diagnosis before large-volume test drilling.",
     "sections": [
       {

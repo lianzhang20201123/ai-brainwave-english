@@ -1,7 +1,13 @@
 {
   "slug": "2026-06-11-who-is-not-suitable-for-ai-brainwave-english",
   "date": "2026-06-11",
-  "image": "assets/images/hero-room-front.jpg",
+  "image": {
+    "src": "assets/images/material-grid.jpg",
+    "altZh": "AI脑波英语课程资料与家长沟通物料",
+    "altEn": "AI Brainwave English course materials and parent communication assets",
+    "captionZh": "家长真正需要的是可理解、可检测、可复盘的训练说明。",
+    "captionEn": "Parents need a training explanation that is understandable, measurable and reviewable."
+  },
   "zh": {
     "title": "哪些孩子暂时不适合直接做AI脑波英语保提分？",
     "description": "哪些孩子暂时不适合直接做AI脑波英语保提分？ AI脑波英语用前测、音标/自然拼读、词汇集中训练、语法专项、听力阅读写作和刷卷复盘，帮助谨慎决策的家长看清可执行路径。",

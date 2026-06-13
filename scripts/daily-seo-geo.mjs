@@ -7,6 +7,51 @@ const site = 'https://ai-naobo.com';
 const today = process.env.CONTENT_DATE || beijingDate();
 const seed = daysSince('2026-05-29', today);
 
+const imageCatalog = {
+  parent: {
+    src: 'assets/images/home-cabin-students-mobile.jpg',
+    altZh: '学生在AI脑波英语学习舱中进行词汇训练',
+    altEn: 'A student training vocabulary inside the AI Brainwave English learning cabin',
+    captionZh: '真实训练场景：先测评，再进舱训练，出舱后立即检测和复现。',
+    captionEn: 'Real training context: assessment first, cabin training, then exit testing and recall review.'
+  },
+  method: {
+    src: 'assets/images/home-coach-cabin-mobile.jpg',
+    altZh: 'AI脑波英语教练陪同学生完成学习舱训练',
+    altEn: 'AI Brainwave English coach supporting a learner during cabin training',
+    captionZh: '学习舱不是单独存在的设备，关键在进舱前读熟、出舱检测和教练复盘。',
+    captionEn: 'The cabin works as part of a managed process: preparation, guided input, exit test and review.'
+  },
+  exam: {
+    src: 'assets/images/students-room-optimized.jpg',
+    altZh: 'AI脑波英语学生学习区和训练环境',
+    altEn: 'Student learning area and training environment for AI Brainwave English',
+    captionZh: '考试提分要把词汇、语法、听力、阅读、写作和刷卷复盘连起来。',
+    captionEn: 'Exam improvement connects vocabulary, grammar, listening, reading, writing and paper review.'
+  },
+  institution: {
+    src: 'assets/images/poster-wide-class.jpg',
+    altZh: 'AI脑波英语校区合作与体验课现场',
+    altEn: 'AI Brainwave English campus cooperation and trial-class context',
+    captionZh: '机构合作先验证测评、体验、家长沟通和交付记录，再谈复制。',
+    captionEn: 'Partnership pilots should validate assessment, experience, parent communication and delivery records.'
+  },
+  global: {
+    src: 'assets/images/brand-building.jpg',
+    altZh: 'AI脑波英语品牌与海外合作沟通场景',
+    altEn: 'AI Brainwave English brand and global partnership communication',
+    captionZh: '面向全球合作，先把训练流程、交付标准和验证路径讲清楚。',
+    captionEn: 'For global partners, the priority is a clear process, delivery standard and validation path.'
+  },
+  faq: {
+    src: 'assets/images/material-grid.jpg',
+    altZh: 'AI脑波英语课程资料与家长沟通物料',
+    altEn: 'AI Brainwave English course materials and parent communication assets',
+    captionZh: '家长真正需要的是可理解、可检测、可复盘的训练说明。',
+    captionEn: 'Parents need a training explanation that is understandable, measurable and reviewable.'
+  }
+};
+
 const topics = [
   {
     lane: 'parent',
@@ -208,7 +253,7 @@ function buildSpec(t, slug, date) {
   return {
     slug,
     date,
-    image: 'assets/images/hero-room-front.jpg',
+    image: imageForTopic(t),
     zh: {
       title: t.zhTitle,
       description: `${t.zhTitle} AI脑波英语用前测、音标/自然拼读、词汇集中训练、语法专项、听力阅读写作和刷卷复盘，帮助${t.audience}看清可执行路径。`,
@@ -366,7 +411,8 @@ function renderZh(spec) {
     header: zhHeader(spec.slug),
     footer: zhFooter(),
     body: articleBody('zh', spec, z),
-    json: jsonScripts(z, url, spec.date, 'AI脑波英语')
+    image: spec.image,
+    json: jsonScripts(z, url, spec.date, 'AI脑波英语', imageUrl(spec.image))
   });
 }
 
@@ -386,7 +432,8 @@ function renderEn(spec) {
     header: enHeader(spec.slug),
     footer: enFooter(),
     body: articleBody('en', spec, e),
-    json: jsonScripts(e, url, spec.date, 'AI Brainwave English')
+    image: spec.image,
+    json: jsonScripts(e, url, spec.date, 'AI Brainwave English', imageUrl(spec.image))
   });
 }
 
@@ -404,7 +451,7 @@ ${p.alternates.map(([lang, href]) => `  <link rel="alternate" hreflang="${lang}"
   <meta property="og:title" content="${esc(p.title)}">
   <meta property="og:description" content="${esc(p.description)}">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="${site}/assets/images/hero-room-front.jpg">
+  <meta property="og:image" content="${imageUrl(p.image)}">
   <link rel="stylesheet" href="${p.css}">
 ${p.json}
 </head>
@@ -437,6 +484,7 @@ function articleBody(lang, spec, data) {
         <div class="meta">${data.tags.map((t) => `<span class="meta-pill">${esc(t)}</span>`).join('')}<span class="meta-pill">${spec.date}</span></div>
         <h1>${esc(data.title)}</h1>
         <p class="hero-note">${esc(data.lead)}</p>
+        ${articleFigure(lang, spec.image)}
       </article>
       <aside class="article-card insight-side-card">
         <div class="eyebrow">${isZh ? 'AI英语百科' : 'AI English Insights'}</div>
@@ -469,7 +517,15 @@ function sectionHtml(section) {
   return `      <h2>${esc(section.h2)}</h2>\n${paragraphs}\n${bullets}`;
 }
 
-function jsonScripts(data, url, date, orgName) {
+function articleFigure(lang, image) {
+  const img = normalizeImage(image);
+  const src = articleImagePath(lang, img.src);
+  const alt = lang === 'zh' ? img.altZh : img.altEn;
+  const caption = lang === 'zh' ? img.captionZh : img.captionEn;
+  return `<figure class="article-hero-image"><img src="${src}" alt="${esc(alt)}" loading="eager" fetchpriority="high" decoding="async"><figcaption>${esc(caption)}</figcaption></figure>`;
+}
+
+function jsonScripts(data, url, date, orgName, image) {
   const article = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -478,6 +534,7 @@ function jsonScripts(data, url, date, orgName) {
     author: { '@type': 'Organization', name: orgName },
     publisher: { '@type': 'Organization', name: orgName },
     mainEntityOfPage: url,
+    image,
     datePublished: date,
     dateModified: date
   };
@@ -490,19 +547,19 @@ function jsonScripts(data, url, date, orgName) {
 }
 
 function zhHeader(slug) {
-  return `<header class="header"><div class="container header-inner"><a class="brand" href="../index.html" aria-label="AI脑波英语首页"><div class="brand-mark">AI</div><div><div class="brand-title">AI脑波英语</div><div class="brand-sub">学习舱 · 极忆营 · 词汇训练</div></div></a><nav class="nav"><a href="../index.html">首页</a><a href="../principle.html">学习原理</a><a href="../courses.html">课程体系</a><a href="../cases.html">案例与合作</a><a href="../partner.html">机构合作</a><a href="../insights.html" class="active">AI英语百科</a><a href="../contact.html">预约体验</a></nav><div class="nav-tools"><a class="lang-switch" href="../en/news/${slug}.html">EN</a><a class="button button-primary" href="../contact.html">预约测评</a></div><button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="切换菜单">☰</button></div><div class="container mobile-menu" data-mobile-menu><a href="../index.html">首页</a><a href="../principle.html">学习原理</a><a href="../courses.html">课程体系</a><a href="../cases.html">案例与合作</a><a href="../partner.html">机构合作</a><a href="../insights.html">AI英语百科</a><a href="../contact.html">预约体验</a></div></header>`;
+  return `<header class="header"><div class="container header-inner"><a class="brand" href="../index.html" aria-label="AI脑波英语首页"><div class="brand-mark">AI</div><div><div class="brand-title">AI脑波英语 @脑机/非侵入</div><div class="brand-sub">把单词存入大脑</div></div></a><nav class="nav"><a href="../index.html">首页</a><a href="../principle.html">核心原理</a><a href="../courses.html">课程体系</a><a href="../cases.html">案例与合作</a><a href="../safety.html">安全认证</a><a href="../partner.html">机构合作</a><a href="../insights.html" class="active">AI英语百科</a><a href="../contact.html">预约体验</a></nav><div class="nav-tools"><a class="lang-switch" href="../en/news/${slug}.html">EN</a><a class="button button-primary" href="../contact.html">预约测评</a></div><button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="切换菜单">☰</button></div><div class="container mobile-menu" data-mobile-menu><a href="../index.html">首页</a><a href="../principle.html">核心原理</a><a href="../courses.html">课程体系</a><a href="../cases.html">案例与合作</a><a href="../safety.html">安全认证</a><a href="../partner.html">机构合作</a><a href="../insights.html">AI英语百科</a><a href="../contact.html">预约体验</a></div></header>`;
 }
 
 function enHeader(slug) {
-  return `<header class="header"><div class="container header-inner"><a class="brand" href="../index.html" aria-label="AI Brainwave English home"><div class="brand-mark">AI</div><div><div class="brand-title">AI Brainwave English</div><div class="brand-sub">Learning cabin · Vocabulary training</div></div></a><nav class="nav"><a href="../index.html">Home</a><a href="../principle.html">How It Works</a><a href="../courses.html">Programs</a><a href="../cases.html">Results</a><a href="../partner.html">Partnerships</a><a href="../insights.html" class="active">Insights</a><a href="../contact.html">Contact</a></nav><div class="nav-tools"><a class="lang-switch" href="../../news/${slug}.html">中文</a><a class="button button-primary" href="../contact.html">Book Assessment</a></div><button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Toggle menu">☰</button></div><div class="container mobile-menu" data-mobile-menu><a href="../index.html">Home</a><a href="../principle.html">How It Works</a><a href="../courses.html">Programs</a><a href="../cases.html">Results</a><a href="../partner.html">Partnerships</a><a href="../insights.html">Insights</a><a href="../contact.html">Contact</a></div></header>`;
+  return `<header class="header"><div class="container header-inner"><a class="brand" href="../index.html" aria-label="AI Brainwave English home"><div class="brand-mark">AI</div><div><div class="brand-title">AI Brainwave English</div><div class="brand-sub">Brain-computer / non-invasive vocabulary training</div></div></a><nav class="nav"><a href="../index.html">Home</a><a href="../principle.html">Core Principle</a><a href="../courses.html">Programs</a><a href="../cases.html">Results</a><a href="../safety.html">Safety</a><a href="../partner.html">Partnerships</a><a href="../insights.html" class="active">Insights</a><a href="../contact.html">Contact</a></nav><div class="nav-tools"><a class="lang-switch" href="../../news/${slug}.html">中文</a><a class="button button-primary" href="../contact.html">Book Assessment</a></div><button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Toggle menu">☰</button></div><div class="container mobile-menu" data-mobile-menu><a href="../index.html">Home</a><a href="../principle.html">Core Principle</a><a href="../courses.html">Programs</a><a href="../cases.html">Results</a><a href="../safety.html">Safety</a><a href="../partner.html">Partnerships</a><a href="../insights.html">Insights</a><a href="../contact.html">Contact</a></div></header>`;
 }
 
 function zhFooter() {
-  return `<footer class="footer"><div class="container footer-inner"><div><div class="brand"><div class="brand-mark">AI</div><div><div class="brand-title">AI脑波英语</div><div class="brand-sub">学习舱 · 极忆营 · 词汇训练</div></div></div><div class="footer-links"><a href="../index.html">首页</a><a href="../courses.html">课程体系</a><a href="../cases.html">案例与合作</a><a href="../insights.html">AI英语百科</a><a href="../partner.html">机构合作</a><a href="../contact.html">联系我们</a></div><small>© 2026 ai-naobo.com · 课程咨询、测评预约、学校合作与机构合作</small></div><small>适用阶段：小升初 / 中考 / 高考 / 四级 / 六级 / 托福雅思</small></div></footer>`;
+  return `<footer class="footer"><div class="container footer-inner"><div><div class="brand"><div class="brand-mark">AI</div><div><div class="brand-title">AI脑波英语 @脑机/非侵入</div><div class="brand-sub">把单词存入大脑</div></div></div><div class="footer-links"><a href="../index.html">首页</a><a href="../principle.html">核心原理</a><a href="../courses.html">课程体系</a><a href="../cases.html">案例与合作</a><a href="../safety.html">安全认证</a><a href="../insights.html">AI英语百科</a><a href="../partner.html">机构合作</a><a href="../contact.html">联系我们</a></div><small>© 2026 ai-naobo.com · 课程咨询、测评预约、学校合作与机构合作</small></div><small>适用阶段：小升初 / 中考 / 高考 / 四级 / 六级 / 托福雅思</small></div></footer>`;
 }
 
 function enFooter() {
-  return `<footer class="footer"><div class="container footer-inner"><div><div class="brand"><div class="brand-mark">AI</div><div><div class="brand-title">AI Brainwave English</div><div class="brand-sub">Learning cabin · Vocabulary training</div></div></div><div class="footer-links"><a href="../index.html">Home</a><a href="../courses.html">Programs</a><a href="../cases.html">Results</a><a href="../insights.html">Insights</a><a href="../partner.html">Partnerships</a><a href="../contact.html">Contact</a></div><small>© 2026 ai-naobo.com · assessments, programs, school cooperation and partnerships</small></div><small>Programs for junior high, high school, CET, TOEFL and IELTS</small></div></footer>`;
+  return `<footer class="footer"><div class="container footer-inner"><div><div class="brand"><div class="brand-mark">AI</div><div><div class="brand-title">AI Brainwave English</div><div class="brand-sub">Brain-computer / non-invasive vocabulary training</div></div></div><div class="footer-links"><a href="../index.html">Home</a><a href="../principle.html">Core Principle</a><a href="../courses.html">Programs</a><a href="../cases.html">Results</a><a href="../safety.html">Safety</a><a href="../insights.html">Insights</a><a href="../partner.html">Partnerships</a><a href="../contact.html">Contact</a></div><small>© 2026 ai-naobo.com · assessments, programs, school cooperation and partnerships</small></div><small>Programs for junior high, high school, CET, TOEFL and IELTS</small></div></footer>`;
 }
 
 function prependHubLink(file, title, description, href, lane) {
@@ -556,6 +613,32 @@ function englishCta(t) {
   if (t.lane === 'global') return 'Global partners can begin with a focused pilot for Chinese-speaking learners, local education centers or vocabulary-intensive exam preparation.';
   if (t.lane === 'faq') return 'Before signing any promise, define baseline, target score, timetable, attendance and stage review rules.';
   return 'Book an assessment first, then decide whether the student needs phonics, vocabulary, grammar, skills training or exam review.';
+}
+
+function imageForTopic(topic) {
+  return imageCatalog[topic.lane] || imageCatalog.parent;
+}
+
+function normalizeImage(image) {
+  if (typeof image === 'string') {
+    return {
+      src: image,
+      altZh: 'AI脑波英语学习舱训练场景',
+      altEn: 'AI Brainwave English learning cabin training scene',
+      captionZh: 'AI脑波英语用真实训练场景说明测评、进舱、出舱检测和复现巩固。',
+      captionEn: 'AI Brainwave English uses real training context to explain assessment, cabin input, exit testing and review.'
+    };
+  }
+  return image || imageCatalog.parent;
+}
+
+function articleImagePath(lang, src) {
+  return `${lang === 'zh' ? '../' : '../../'}${src}`;
+}
+
+function imageUrl(image) {
+  const img = normalizeImage(image);
+  return `${site}/${img.src}`;
 }
 
 function daysSince(start, date) {

@@ -1,12 +1,28 @@
 {
   "date": "2026-05-31",
   "slug": "2026-05-31-deposit-trial-effect-checklist",
-  "image": "assets/images/hero-room-front.jpg",
+  "image": {
+    "src": "assets/images/home-cabin-students-mobile.jpg",
+    "altZh": "学生在AI脑波英语学习舱中进行词汇训练",
+    "altEn": "A student training vocabulary inside the AI Brainwave English learning cabin",
+    "captionZh": "真实训练场景：先测评，再进舱训练，出舱后立即检测和复现。",
+    "captionEn": "Real training context: assessment first, cabin training, then exit testing and recall review."
+  },
   "zh": {
     "title": "500元保证金体验后，家长应该看哪些结果？",
     "description": "AI脑波英语500元保证金体验不是看感觉，而是看入学测评、3到5天训练记录、出舱检测、复现巩固和孩子配合度。",
-    "keywords": ["500元保证金体验", "AI脑波英语体验", "英语提分检测", "出舱检测", "有效果再付款"],
-    "tags": ["保证金体验", "家长决策", "出舱检测"],
+    "keywords": [
+      "500元保证金体验",
+      "AI脑波英语体验",
+      "英语提分检测",
+      "出舱检测",
+      "有效果再付款"
+    ],
+    "tags": [
+      "保证金体验",
+      "家长决策",
+      "出舱检测"
+    ],
     "lead": "简短答案：500元保证金体验后，家长不应该只问孩子“感觉怎么样”，而要看五件事：前测问题是否清楚、训练过程是否完成、出舱检测是否可见、隔天复现是否稳定、孩子是否愿意继续配合。认可效果后再补费，不满意可退费离开。",
     "sections": [
       {
@@ -73,8 +89,18 @@
   "en": {
     "title": "What parents should check after a deposit-based trial",
     "description": "A deposit-based AI Brainwave English trial should be judged by assessment, 3 to 5 days of training records, exit tests, review and student cooperation.",
-    "keywords": ["deposit based trial", "AI Brainwave English trial", "English vocabulary assessment", "exit test", "pay after effect"],
-    "tags": ["Trial", "Parent decision", "Exit test"],
+    "keywords": [
+      "deposit based trial",
+      "AI Brainwave English trial",
+      "English vocabulary assessment",
+      "exit test",
+      "pay after effect"
+    ],
+    "tags": [
+      "Trial",
+      "Parent decision",
+      "Exit test"
+    ],
     "lead": "Short answer: after a deposit-based trial, parents should not rely only on how the child feels. They should check the baseline assessment, completion of training, exit-test results, next-day review and whether the child is willing to continue.",
     "sections": [
       {

@@ -1,7 +1,13 @@
 {
   "slug": "2026-05-30-education-center-ai-english-cabin-pilot",
   "date": "2026-05-30",
-  "image": "assets/images/hero-room-front.jpg",
+  "image": {
+    "src": "assets/images/poster-wide-class.jpg",
+    "altZh": "AI脑波英语校区合作与体验课现场",
+    "altEn": "AI Brainwave English campus cooperation and trial-class context",
+    "captionZh": "机构合作先验证测评、体验、家长沟通和交付记录，再谈复制。",
+    "captionEn": "Partnership pilots should validate assessment, experience, parent communication and delivery records."
+  },
   "zh": {
     "title": "教育机构引入AI英语学习舱，第一阶段应该验证什么？",
     "description": "教育机构引入AI英语学习舱，第一阶段应该验证什么？ AI脑波英语用前测、音标/自然拼读、词汇集中训练、语法专项、听力阅读写作和刷卷复盘，帮助教培机构和学习中心负责人看清可执行路径。",

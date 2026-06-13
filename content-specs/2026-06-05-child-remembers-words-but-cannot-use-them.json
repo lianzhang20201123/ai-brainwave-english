@@ -1,7 +1,13 @@
 {
   "slug": "2026-06-05-child-remembers-words-but-cannot-use-them",
   "date": "2026-06-05",
-  "image": "assets/images/hero-room-front.jpg",
+  "image": {
+    "src": "assets/images/home-cabin-students-mobile.jpg",
+    "altZh": "学生在AI脑波英语学习舱中进行词汇训练",
+    "altEn": "A student training vocabulary inside the AI Brainwave English learning cabin",
+    "captionZh": "真实训练场景：先测评，再进舱训练，出舱后立即检测和复现。",
+    "captionEn": "Real training context: assessment first, cabin training, then exit testing and recall review."
+  },
   "zh": {
     "title": "孩子单词背过了，为什么听力阅读写作还是上不去？",
     "description": "孩子单词背过了，为什么听力阅读写作还是上不去？ AI脑波英语用前测、音标/自然拼读、词汇集中训练、语法专项、听力阅读写作和刷卷复盘，帮助初高中家长看清可执行路径。",

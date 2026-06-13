@@ -18,6 +18,9 @@ for (const file of htmlFiles) {
   if (!/<meta\s+name="description"\s+content="[^"]{40,}"/i.test(html)) {
     errors.push(`${rel(file)} is missing a useful meta description`);
   }
+  if (isDailyArticle(file) && !hasVisibleArticleImage(html)) {
+    errors.push(`${rel(file)} is missing a visible article image`);
+  }
 }
 
 checkSitemap();
@@ -56,6 +59,16 @@ function shouldValidateHtml(file) {
   if (/^news\/20\d{2}-\d{2}-\d{2}-/.test(relative)) return true;
   if (/^en\/news\/20\d{2}-\d{2}-\d{2}-/.test(relative)) return true;
   return false;
+}
+
+function isDailyArticle(file) {
+  const relative = rel(file);
+  return /^news\/20\d{2}-\d{2}-\d{2}-/.test(relative) || /^en\/news\/20\d{2}-\d{2}-\d{2}-/.test(relative);
+}
+
+function hasVisibleArticleImage(html) {
+  const body = html.split(/<\/head>/i)[1] || html;
+  return /<figure\s+class="article-hero-image"[\s\S]*?<img\s+[^>]*src="[^"]+\.(?:jpg|jpeg|png|webp)(?:\?[^"]*)?"/i.test(body);
 }
 
 function checkLinks(file, html) {

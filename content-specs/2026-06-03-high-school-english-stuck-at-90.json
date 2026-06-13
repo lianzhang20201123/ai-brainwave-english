@@ -1,7 +1,13 @@
 {
   "slug": "2026-06-03-high-school-english-stuck-at-90",
   "date": "2026-06-03",
-  "image": "assets/images/hero-room-front.jpg",
+  "image": {
+    "src": "assets/images/students-room-optimized.jpg",
+    "altZh": "AI脑波英语学生学习区和训练环境",
+    "altEn": "Student learning area and training environment for AI Brainwave English",
+    "captionZh": "考试提分要把词汇、语法、听力、阅读、写作和刷卷复盘连起来。",
+    "captionEn": "Exam improvement connects vocabulary, grammar, listening, reading, writing and paper review."
+  },
   "zh": {
     "title": "高中英语卡在90分左右，通常不是只差刷题",
     "description": "高中英语卡在90分左右，通常不是只差刷题 AI脑波英语用前测、音标/自然拼读、词汇集中训练、语法专项、听力阅读写作和刷卷复盘，帮助高中家长看清可执行路径。",

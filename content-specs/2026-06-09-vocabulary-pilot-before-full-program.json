@@ -1,7 +1,13 @@
 {
   "slug": "2026-06-09-vocabulary-pilot-before-full-program",
   "date": "2026-06-09",
-  "image": "assets/images/home-coach-cabin-mobile.jpg",
+  "image": {
+    "src": "assets/images/poster-wide-class.jpg",
+    "altZh": "AI脑波英语校区合作与体验课现场",
+    "altEn": "AI Brainwave English campus cooperation and trial-class context",
+    "captionZh": "机构合作先验证测评、体验、家长沟通和交付记录，再谈复制。",
+    "captionEn": "Partnership pilots should validate assessment, experience, parent communication and delivery records."
+  },
   "zh": {
     "title": "教育机构做英语增项，为什么要先用200词体验验证？",
     "description": "教育机构做英语增项，建议先用200词体验验证家长兴趣、学生复现、教练服务和后续转化，再决定是否引入完整英语训练项目。",

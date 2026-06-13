@@ -1,12 +1,29 @@
 {
   "date": "2026-05-28",
   "slug": "phonics-vocabulary-grammar-path",
-  "image": "assets/images/hero-room-front.jpg",
+  "image": {
+    "src": "assets/images/home-coach-cabin-mobile.jpg",
+    "altZh": "AI脑波英语教练陪同学生完成学习舱训练",
+    "altEn": "AI Brainwave English coach supporting a learner during cabin training",
+    "captionZh": "学习舱不是单独存在的设备，关键在进舱前读熟、出舱检测和教练复盘。",
+    "captionEn": "The cabin works as part of a managed process: preparation, guided input, exit test and review."
+  },
   "zh": {
     "title": "初高中英语提分，为什么要先音标、再词汇、再语法刷题？",
     "description": "AI脑波英语解释初高中英语提分路径：先修复音标和自然拼读，再集中突破词汇，然后用语法、听力、阅读、写作和刷卷复盘转化成考试分数。",
-    "keywords": ["初高中英语提分", "音标", "英语词汇", "英语语法", "刷卷子", "AI脑波英语"],
-    "tags": ["提分路径", "音标词汇", "考试转化"],
+    "keywords": [
+      "初高中英语提分",
+      "音标",
+      "英语词汇",
+      "英语语法",
+      "刷卷子",
+      "AI脑波英语"
+    ],
+    "tags": [
+      "提分路径",
+      "音标词汇",
+      "考试转化"
+    ],
     "lead": "很多学生英语提不上去，不是单点问题，而是音标、词汇、语法、听读写和刷卷复盘没有形成顺序。",
     "sections": [
       {
@@ -22,7 +39,12 @@
           "很多孩子背单词慢，不是记忆力差，而是不会读、读不准、音形义没有连接起来。",
           "音标和自然拼读打牢后，孩子看到新词更容易读出来，听到单词更容易辨出来，背词也不再完全靠死记硬背。"
         ],
-        "bullets": ["读准目标词", "听辨目标词", "建立音形义连接", "降低背词抗拒"]
+        "bullets": [
+          "读准目标词",
+          "听辨目标词",
+          "建立音形义连接",
+          "降低背词抗拒"
+        ]
       },
       {
         "h2": "为什么词汇是核心突破口？",
@@ -30,7 +52,13 @@
           "词汇一旦稳住，会直接帮助听力、阅读、完形和写作。很多孩子听不懂、读不懂、写不出，本质上都和词汇底座不稳有关。",
           "AI脑波英语学习舱适合做词汇的节律化输入、出舱检测和复现巩固，但训练不能停留在“听过了”，必须当场测、隔天复现。"
         ],
-        "bullets": ["会读", "会听", "会认", "会拼", "会在句子中理解"]
+        "bullets": [
+          "会读",
+          "会听",
+          "会认",
+          "会拼",
+          "会在句子中理解"
+        ]
       },
       {
         "h2": "词汇之后，语法、听力、阅读、写作怎么接上？",
@@ -48,18 +76,40 @@
       }
     ],
     "faqs": [
-      {"q": "英语提分一定要先学音标吗？", "a": "如果孩子读词不准、拼读困难，建议先修复音标或自然拼读，否则背词效率会很低。"},
-      {"q": "学习舱只解决词汇吗？", "a": "学习舱主要用于词汇输入、听辨和复现，但考试提分还需要语法、听力、阅读、写作和刷卷复盘。"},
-      {"q": "什么时候开始刷卷子？", "a": "基础词汇和语法有一定稳定度后再逐步刷专项卷和整卷，刷完必须复盘错因。"},
-      {"q": "家长怎么判断孩子适合哪条路径？", "a": "先做入学测评，看音标、词汇、语法、听读写和试卷失分点，再确定训练顺序和目标。"}
+      {
+        "q": "英语提分一定要先学音标吗？",
+        "a": "如果孩子读词不准、拼读困难，建议先修复音标或自然拼读，否则背词效率会很低。"
+      },
+      {
+        "q": "学习舱只解决词汇吗？",
+        "a": "学习舱主要用于词汇输入、听辨和复现，但考试提分还需要语法、听力、阅读、写作和刷卷复盘。"
+      },
+      {
+        "q": "什么时候开始刷卷子？",
+        "a": "基础词汇和语法有一定稳定度后再逐步刷专项卷和整卷，刷完必须复盘错因。"
+      },
+      {
+        "q": "家长怎么判断孩子适合哪条路径？",
+        "a": "先做入学测评，看音标、词汇、语法、听读写和试卷失分点，再确定训练顺序和目标。"
+      }
     ],
     "cta": "如果孩子英语长期卡住，建议先做入学测评，判断音标、词汇、语法和题型短板，再制定训练方案。"
   },
   "en": {
     "title": "Why English improvement should start with phonics, vocabulary, grammar and then exam practice",
     "description": "AI Brainwave English explains a practical improvement path for middle and high school students: phonics, vocabulary, grammar, listening, reading, writing and exam-paper review.",
-    "keywords": ["English vocabulary training", "phonics", "exam English", "AI English learning cabin", "grammar and reading"],
-    "tags": ["Learning Path", "Vocabulary", "Exam Practice"],
+    "keywords": [
+      "English vocabulary training",
+      "phonics",
+      "exam English",
+      "AI English learning cabin",
+      "grammar and reading"
+    ],
+    "tags": [
+      "Learning Path",
+      "Vocabulary",
+      "Exam Practice"
+    ],
     "lead": "Many students do not improve because the learning order is broken: pronunciation, vocabulary, grammar, listening, reading, writing and paper review need to work together.",
     "sections": [
       {
@@ -75,7 +125,12 @@
           "Many students struggle with vocabulary because sound, spelling and meaning are not connected.",
           "When phonics and pronunciation improve, students can read new words more confidently, recognize words by sound and reduce the pressure of memorizing everything mechanically."
         ],
-        "bullets": ["pronounce target words", "recognize words by sound", "connect sound, spelling and meaning", "reduce vocabulary resistance"]
+        "bullets": [
+          "pronounce target words",
+          "recognize words by sound",
+          "connect sound, spelling and meaning",
+          "reduce vocabulary resistance"
+        ]
       },
       {
         "h2": "Why vocabulary is the main breakthrough",
@@ -83,7 +138,13 @@
           "Stable vocabulary supports listening, reading, cloze tasks and writing. Many listening and reading problems are actually vocabulary problems first.",
           "The learning cabin is used for rhythmic input, exit testing and review, but every session must include testing and follow-up review."
         ],
-        "bullets": ["pronounce", "recognize", "listen", "spell", "understand in context"]
+        "bullets": [
+          "pronounce",
+          "recognize",
+          "listen",
+          "spell",
+          "understand in context"
+        ]
       },
       {
         "h2": "How grammar, listening, reading and writing connect",
@@ -101,10 +162,22 @@
       }
     ],
     "faqs": [
-      {"q": "Should students learn phonics before vocabulary?", "a": "If pronunciation and spelling are weak, phonics should be repaired first because it improves vocabulary efficiency."},
-      {"q": "Does the learning cabin solve every English problem?", "a": "No. It supports vocabulary input and review, but exam improvement also needs grammar, listening, reading, writing and paper practice."},
-      {"q": "When should students start exam papers?", "a": "After the key foundation is more stable, students can move into targeted papers and full timed practice with error analysis."},
-      {"q": "How should a family choose the right path?", "a": "Start with an assessment of phonics, vocabulary, grammar, listening, reading, writing and exam gaps."}
+      {
+        "q": "Should students learn phonics before vocabulary?",
+        "a": "If pronunciation and spelling are weak, phonics should be repaired first because it improves vocabulary efficiency."
+      },
+      {
+        "q": "Does the learning cabin solve every English problem?",
+        "a": "No. It supports vocabulary input and review, but exam improvement also needs grammar, listening, reading, writing and paper practice."
+      },
+      {
+        "q": "When should students start exam papers?",
+        "a": "After the key foundation is more stable, students can move into targeted papers and full timed practice with error analysis."
+      },
+      {
+        "q": "How should a family choose the right path?",
+        "a": "Start with an assessment of phonics, vocabulary, grammar, listening, reading, writing and exam gaps."
+      }
     ],
     "cta": "Start with an assessment to understand whether the student is blocked by phonics, vocabulary, grammar or exam skills."
   }

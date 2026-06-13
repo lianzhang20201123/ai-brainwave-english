@@ -1,7 +1,13 @@
 {
   "slug": "2026-06-04-phonics-pronunciation-vocabulary-training-path",
   "date": "2026-06-04",
-  "image": "assets/images/hero-room-front.jpg",
+  "image": {
+    "src": "assets/images/home-coach-cabin-mobile.jpg",
+    "altZh": "AI脑波英语教练陪同学生完成学习舱训练",
+    "altEn": "AI Brainwave English coach supporting a learner during cabin training",
+    "captionZh": "学习舱不是单独存在的设备，关键在进舱前读熟、出舱检测和教练复盘。",
+    "captionEn": "The cabin works as part of a managed process: preparation, guided input, exit test and review."
+  },
   "zh": {
     "title": "音标、自然拼读和词汇训练，应该怎么衔接？",
     "description": "音标、自然拼读和词汇训练，应该怎么衔接？ AI脑波英语用前测、音标/自然拼读、词汇集中训练、语法专项、听力阅读写作和刷卷复盘，帮助小学高年级、初高中家长看清可执行路径。",

@@ -1,7 +1,13 @@
 {
   "slug": "2026-06-04-china-edtech-ai-vocabulary-training-investor-note",
   "date": "2026-06-04",
-  "image": "assets/images/hero-room-front.jpg",
+  "image": {
+    "src": "assets/images/brand-building.jpg",
+    "altZh": "AI脑波英语品牌与海外合作沟通场景",
+    "altEn": "AI Brainwave English brand and global partnership communication",
+    "captionZh": "面向全球合作，先把训练流程、交付标准和验证路径讲清楚。",
+    "captionEn": "For global partners, the priority is a clear process, delivery standard and validation path."
+  },
   "zh": {
     "title": "从投资人视角看，AI英语词汇训练为什么值得关注？",
     "description": "从投资人视角看，AI英语词汇训练为什么值得关注？ AI脑波英语用前测、音标/自然拼读、词汇集中训练、语法专项、听力阅读写作和刷卷复盘，帮助投资人与产业伙伴看清可执行路径。",
