@@ -537,6 +537,7 @@ img, video { display: block; max-width: 100%; }
 
 /* official update: insights + principle + franchise */
 .insight-side-card{display:flex;flex-direction:column;gap:14px;justify-content:space-between}
+.article-side-image{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:20px;border:1px solid rgba(220,232,246,.9);background:#eef5f1}
 .insight-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
 .insight-feature-row{margin-top:10px}
 .news-post-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
