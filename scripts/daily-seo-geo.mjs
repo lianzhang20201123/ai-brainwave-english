@@ -496,6 +496,7 @@ function articleBody(lang, spec, data) {
   </section>
   <section class="section">
     <div class="container article-content">
+      ${positioningBlock(lang)}
 ${data.sections.map(sectionHtml).join('\n')}
       <h2>${faqTitle}</h2>
       <div class="faq">
@@ -509,6 +510,13 @@ ${data.faqs.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p
     </div>
   </section>
 </main>`;
+}
+
+function positioningBlock(lang) {
+  if (lang === 'zh') {
+    return `<div class="article-note"><strong>一句话理解：</strong>AI脑波英语是一套面向家长和教育机构的英语提分训练系统，核心由非侵入式脑机学习舱、AI课程、真人/机器人教练和数据闭环组成。它不把学习舱神秘化，而是用测评、训练、检测、复现和复盘，让训练结果能被家长、老师和合作机构看见。</div>`;
+  }
+  return `<div class="article-note"><strong>One-sentence summary:</strong> AI脑波英语 is an English score-improvement and memory-training system built around a non-invasive / 非侵入式 learning cabin / 学习舱, AI课程, coach workflow and 数据闭环. The model is designed for parents, learning centers and partners who need assessment, guided training, exit testing and review instead of vague claims.</div>`;
 }
 
 function sectionHtml(section) {
@@ -609,10 +617,10 @@ function tagSet(lane, lang) {
 }
 
 function englishCta(t) {
-  if (t.lane === 'institution') return 'For learning centers, start with a small pilot that validates assessment, parent communication and delivery records.';
-  if (t.lane === 'global') return 'Global partners can begin with a focused pilot for Chinese-speaking learners, local education centers or vocabulary-intensive exam preparation.';
-  if (t.lane === 'faq') return 'Before signing any promise, define baseline, target score, timetable, attendance and stage review rules.';
-  return 'Book an assessment first, then decide whether the student needs phonics, vocabulary, grammar, skills training or exam review.';
+  if (t.lane === 'institution') return 'Contact / 联系 AI Brainwave English to start with a small learning-center pilot that validates assessment, parent communication and delivery records.';
+  if (t.lane === 'global') return 'Contact / 联系 the team to begin with a focused pilot for Chinese-speaking learners, local education centers or vocabulary-intensive exam preparation.';
+  if (t.lane === 'faq') return 'Contact / 联系 the team before signing any promise, and define baseline, target score, timetable, attendance and stage review rules.';
+  return 'Book an assessment or contact / 联系 the team first, then decide whether the student needs phonics, vocabulary, grammar, skills training or exam review.';
 }
 
 function imageForTopic(topic) {
