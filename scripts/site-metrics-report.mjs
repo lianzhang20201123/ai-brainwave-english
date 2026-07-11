@@ -9,6 +9,7 @@ const outDir = path.join(root, 'reports', 'site-metrics');
 const htmlFiles = listFiles(root, '.html')
   .filter((file) => !file.includes(`${path.sep}.git${path.sep}`))
   .map((file) => path.relative(root, file).replaceAll(path.sep, '/'))
+  .filter((file) => !isNonIndexableUtilityPage(file))
   .sort();
 
 const newsZh = htmlFiles.filter((file) => file.startsWith('news/'));
@@ -72,6 +73,11 @@ function listFiles(dir, ext, acc = []) {
     else if (entry.isFile() && full.endsWith(ext)) acc.push(full);
   }
   return acc;
+}
+
+function isNonIndexableUtilityPage(file) {
+  const basename = path.posix.basename(file);
+  return basename === '404.html' || basename.startsWith('_');
 }
 
 function readSitemapUrls() {
