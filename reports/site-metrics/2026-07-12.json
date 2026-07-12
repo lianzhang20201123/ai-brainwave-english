@@ -1,17 +1,20 @@
 {
   "date": "2026-07-12",
-  "generatedAt": "2026-07-11T23:31:48.351Z",
+  "generatedAt": "2026-07-12T00:11:31.620Z",
   "totals": {
-    "htmlPages": 401,
-    "sitemapUrls": 343,
-    "zhNews": 183,
-    "enNews": 156,
+    "htmlPages": 407,
+    "sitemapUrls": 349,
+    "zhNews": 186,
+    "enNews": 159,
     "zhTopics": 9,
     "enTopics": 9,
     "issueCount": 195
   },
   "latest": {
     "zhNews": [
+      "news/2026-07-12-guaranteed-score-improvement-contract-explained.html",
+      "news/2026-07-12-gaokao-english-3500-words-to-reading.html",
+      "news/2026-07-12-from-vocabulary-to-writing-output.html",
       "news/2026-07-11-education-center-ai-english-cabin-pilot.html",
       "news/2026-07-11-china-edtech-ai-vocabulary-training-investor-note.html",
       "news/2026-07-11-child-remembers-words-but-cannot-use-them.html",
@@ -20,12 +23,12 @@
       "news/2026-07-10-middle-school-english-vocabulary-before-grammar.html",
       "news/2026-07-09-who-is-not-suitable-for-ai-brainwave-english.html",
       "news/2026-07-09-from-vocabulary-to-writing-output.html",
-      "news/2026-07-09-ai-english-learning-cabin-for-global-partners.html",
-      "news/2026-07-08-gaokao-english-3500-words-to-reading.html",
-      "news/2026-07-08-education-center-ai-english-cabin-pilot.html",
-      "news/2026-07-08-child-remembers-words-but-cannot-use-them.html"
+      "news/2026-07-09-ai-english-learning-cabin-for-global-partners.html"
     ],
     "enNews": [
+      "en/news/2026-07-12-guaranteed-score-improvement-contract-explained.html",
+      "en/news/2026-07-12-gaokao-english-3500-words-to-reading.html",
+      "en/news/2026-07-12-from-vocabulary-to-writing-output.html",
       "en/news/2026-07-11-education-center-ai-english-cabin-pilot.html",
       "en/news/2026-07-11-china-edtech-ai-vocabulary-training-investor-note.html",
       "en/news/2026-07-11-child-remembers-words-but-cannot-use-them.html",
@@ -34,10 +37,7 @@
       "en/news/2026-07-10-middle-school-english-vocabulary-before-grammar.html",
       "en/news/2026-07-09-who-is-not-suitable-for-ai-brainwave-english.html",
       "en/news/2026-07-09-from-vocabulary-to-writing-output.html",
-      "en/news/2026-07-09-ai-english-learning-cabin-for-global-partners.html",
-      "en/news/2026-07-08-gaokao-english-3500-words-to-reading.html",
-      "en/news/2026-07-08-education-center-ai-english-cabin-pilot.html",
-      "en/news/2026-07-08-child-remembers-words-but-cannot-use-them.html"
+      "en/news/2026-07-09-ai-english-learning-cabin-for-global-partners.html"
     ]
   },
   "issues": [
