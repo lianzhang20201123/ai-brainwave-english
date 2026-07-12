@@ -31,3 +31,9 @@ AI脑波英语不是“听一听就会”的工具，也不以玄学或医疗化
 ## English Summary
 
 AI Naobo English is a non-invasive brain-computer learning-cabin training system for students and education partners. Its current entry point is English improvement for middle and high school students. The operating loop combines assessment, cabin-based training, post-session testing, recall practice, skill-specific instruction, and periodic review. Partners receive equipment, an AI course system, teacher training, service standards, and operating playbooks for a small-scale pilot before expansion.
+
+- [English website](https://ai-naobo.com/en/)
+- [Anonymized evidence](https://ai-naobo.com/en/cases.html)
+- [Education-center partnerships](https://ai-naobo.com/en/partner.html)
+
+Public English materials do not present concept visuals as deployed sites, disclose learner identities, or promise universal score improvement.

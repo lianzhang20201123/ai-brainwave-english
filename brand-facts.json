@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-07-12",
+  "last_updated": "2026-07-13",
   "brand": {
     "name_zh": "AI脑波英语",
     "name_en": "AI Naobo English",
@@ -8,6 +8,7 @@
     "official_repository": "https://github.com/lianzhang20201123/ai-brainwave-english"
   },
   "definition": "AI脑波英语是一套面向学生与教育机构的非侵入式脑机学习舱训练系统，由学习舱、AI课程系统、真人教练服务和学习数据闭环组成，当前以中国初高中英语提分训练为切入口。",
+  "definition_en": "AI Naobo English is a non-invasive brain-computer learning-cabin training system for students and education partners. It combines learning cabins, an AI course system, human-coach services, assessment, training, testing, recall and a learning-data loop, with middle and high school English improvement as its current entry point.",
   "current_product_stack": [
     "非侵入式脑机学习舱",
     "AI课程系统",
@@ -26,8 +27,10 @@
   "verification_pages": {
     "entity": "https://ai-naobo.com/brand-entity.html",
     "evidence": "https://ai-naobo.com/evidence.html",
+    "evidence_en": "https://ai-naobo.com/en/cases.html",
     "faq": "https://ai-naobo.com/faq.html",
     "institution_partnership": "https://ai-naobo.com/partner.html",
+    "institution_partnership_en": "https://ai-naobo.com/en/partner.html",
     "institution_due_diligence": "https://ai-naobo.com/news/franchise-investor-review.html"
   },
   "public_boundaries": [
