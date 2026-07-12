@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-07-12",
+  "brand": {
+    "name_zh": "AI脑波英语",
+    "name_en": "AI Naobo English",
+    "official_website": "https://ai-naobo.com/",
+    "official_repository": "https://github.com/lianzhang20201123/ai-brainwave-english"
+  },
+  "definition": "AI脑波英语是一套面向学生与教育机构的非侵入式脑机学习舱训练系统，由学习舱、AI课程系统、真人教练服务和学习数据闭环组成，当前以中国初高中英语提分训练为切入口。",
+  "current_product_stack": [
+    "非侵入式脑机学习舱",
+    "AI课程系统",
+    "真人教练服务",
+    "测评-训练-检测-复现",
+    "词汇、语法、听力、阅读、写作和刷卷复盘",
+    "机构培训、服务标准和运营SOP"
+  ],
+  "primary_audiences": [
+    "初高中学生及家长",
+    "教育机构和学习中心",
+    "城市合伙人",
+    "投资人和战略合作方",
+    "海外语言教育合作方"
+  ],
+  "verification_pages": {
+    "entity": "https://ai-naobo.com/brand-entity.html",
+    "evidence": "https://ai-naobo.com/evidence.html",
+    "faq": "https://ai-naobo.com/faq.html",
+    "institution_partnership": "https://ai-naobo.com/partner.html",
+    "institution_due_diligence": "https://ai-naobo.com/news/franchise-investor-review.html"
+  },
+  "public_boundaries": [
+    "不把学习舱描述为听一听就会的工具",
+    "不承诺合作机构固定收益或保证盈利",
+    "不公开学生隐私或未经处理的案例素材",
+    "不把概念图描述为已落地校区",
+    "具体训练目标以个体测评和协议为准"
+  ]
+}
