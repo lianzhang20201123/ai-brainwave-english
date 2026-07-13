@@ -10,6 +10,7 @@ const htmlFiles = listFiles(root, '.html')
   .filter((file) => !file.includes(`${path.sep}.git${path.sep}`))
   .map((file) => path.relative(root, file).replaceAll(path.sep, '/'))
   .filter((file) => !isNonIndexableUtilityPage(file))
+  .filter((file) => !hasNoindex(file))
   .sort();
 
 const newsZh = htmlFiles.filter((file) => file.startsWith('news/'));
@@ -80,6 +81,12 @@ function isNonIndexableUtilityPage(file) {
   return basename === '404.html' || basename.startsWith('_');
 }
 
+function hasNoindex(file) {
+  const html = fs.readFileSync(path.join(root, file), 'utf8');
+  return /<meta\s+[^>]*name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)
+    || /<meta\s+[^>]*content=["'][^"']*noindex[^"']*["'][^>]*name=["']robots["']/i.test(html);
+}
+
 function readSitemapUrls() {
   const sitemap = path.join(root, 'sitemap.xml');
   if (!fs.existsSync(sitemap)) return [];
@@ -107,7 +114,10 @@ function collectIssues(files) {
     if ((file.startsWith('news/') || file.startsWith('en/news/')) && !html.includes('"@type": "FAQPage"')) {
       issues.push(`${file}: news page missing FAQPage JSON-LD`);
     }
-    if (!sitemapSet.has(file) && !sitemapSet.has(file.replace(/^en\//, 'en/'))) {
+    const sitemapPath = file.endsWith('/index.html')
+      ? file.slice(0, -'index.html'.length)
+      : file === 'index.html' ? '' : file;
+    if (!sitemapSet.has(file) && !sitemapSet.has(sitemapPath)) {
       issues.push(`${file}: missing from sitemap.xml`);
     }
   }

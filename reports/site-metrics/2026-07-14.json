@@ -1,14 +1,14 @@
 {
   "date": "2026-07-14",
-  "generatedAt": "2026-07-14T00:07:39.974Z",
+  "generatedAt": "2026-07-14T01:19:36.370Z",
   "totals": {
-    "htmlPages": 419,
+    "htmlPages": 418,
     "sitemapUrls": 361,
     "zhNews": 192,
     "enNews": 165,
     "zhTopics": 9,
     "enTopics": 9,
-    "issueCount": 195
+    "issueCount": 188
   },
   "latest": {
     "zhNews": [
@@ -41,12 +41,9 @@
     ]
   },
   "issues": [
-    "article-007.html: missing canonical",
-    "article-007.html: missing from sitemap.xml",
     "brainwave-principle-explained.html: missing from sitemap.xml",
     "brainwave-safety-explained.html: missing from sitemap.xml",
     "cet-vocabulary-strategy.html: missing from sitemap.xml",
-    "en/index.html: missing from sitemap.xml",
     "en/news/before-the-free-assessment.html: news page missing Article JSON-LD",
     "en/news/before-the-free-assessment.html: news page missing FAQPage JSON-LD",
     "en/news/before-the-free-assessment.html: missing from sitemap.xml",
@@ -91,7 +88,6 @@
     "free-assessment-guide.html: missing from sitemap.xml",
     "gaokao-130-points.html: missing from sitemap.xml",
     "gaokao-3500-words.html: missing from sitemap.xml",
-    "index.html: missing from sitemap.xml",
     "junior-high-102-score.html: missing from sitemap.xml",
     "kid-vocabulary-habits.html: missing from sitemap.xml",
     "learning-environment-matters.html: missing from sitemap.xml",
@@ -119,8 +115,12 @@
     "news/article-006.html: news page missing Article JSON-LD",
     "news/article-006.html: news page missing FAQPage JSON-LD",
     "news/article-006.html: missing from sitemap.xml",
-    "news/article-007.html: missing canonical",
-    "news/article-007.html: news page missing Article JSON-LD"
+    "news/article-007.html: missing from sitemap.xml",
+    "news/article-008.html: missing canonical",
+    "news/article-008.html: news page missing Article JSON-LD",
+    "news/article-008.html: news page missing FAQPage JSON-LD",
+    "news/article-008.html: missing from sitemap.xml",
+    "news/article-009.html: missing canonical"
   ],
   "notes": [
     "This report measures site publishing and SEO/GEO readiness, not real visitor traffic.",

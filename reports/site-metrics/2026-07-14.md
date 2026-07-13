@@ -4,13 +4,13 @@
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：419
+- HTML页面总数：418
 - Sitemap URL数：361
 - 中文文章数：192
 - 英文文章数：165
 - 中文专题页数：9
 - 英文专题页数：9
-- 结构/收录准备问题数：195
+- 结构/收录准备问题数：188
 
 ## 2. 最新中文文章
 
@@ -44,12 +44,9 @@
 
 ## 4. 需要继续修复的SEO基础问题
 
-- article-007.html: missing canonical
-- article-007.html: missing from sitemap.xml
 - brainwave-principle-explained.html: missing from sitemap.xml
 - brainwave-safety-explained.html: missing from sitemap.xml
 - cet-vocabulary-strategy.html: missing from sitemap.xml
-- en/index.html: missing from sitemap.xml
 - en/news/before-the-free-assessment.html: news page missing Article JSON-LD
 - en/news/before-the-free-assessment.html: news page missing FAQPage JSON-LD
 - en/news/before-the-free-assessment.html: missing from sitemap.xml
@@ -74,6 +71,9 @@
 - en/news/is-brainwave-english-safe.html: news page missing FAQPage JSON-LD
 - en/news/junior-high-english-vocabulary-problem.html: news page missing Article JSON-LD
 - en/news/junior-high-english-vocabulary-problem.html: news page missing FAQPage JSON-LD
+- en/news/kid-vocabulary-habits.html: news page missing Article JSON-LD
+- en/news/kid-vocabulary-habits.html: news page missing FAQPage JSON-LD
+- en/news/kid-vocabulary-habits.html: missing from sitemap.xml
 - 另有 50 个问题在JSON报告中。
 
 ## 5. 还需接入的数据源
