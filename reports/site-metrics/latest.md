@@ -4,16 +4,19 @@
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：407
-- Sitemap URL数：349
-- 中文文章数：186
-- 英文文章数：159
+- HTML页面总数：413
+- Sitemap URL数：355
+- 中文文章数：189
+- 英文文章数：162
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：195
 
 ## 2. 最新中文文章
 
+- news/2026-07-13-who-is-not-suitable-for-ai-brainwave-english.html
+- news/2026-07-13-middle-school-english-vocabulary-before-grammar.html
+- news/2026-07-13-education-center-ai-english-cabin-pilot.html
 - news/2026-07-12-guaranteed-score-improvement-contract-explained.html
 - news/2026-07-12-gaokao-english-3500-words-to-reading.html
 - news/2026-07-12-from-vocabulary-to-writing-output.html
@@ -23,12 +26,12 @@
 - news/2026-07-10-zhongkao-english-score-improvement-workflow.html
 - news/2026-07-10-phonics-pronunciation-vocabulary-training-path.html
 - news/2026-07-10-middle-school-english-vocabulary-before-grammar.html
-- news/2026-07-09-who-is-not-suitable-for-ai-brainwave-english.html
-- news/2026-07-09-from-vocabulary-to-writing-output.html
-- news/2026-07-09-ai-english-learning-cabin-for-global-partners.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-07-13-who-is-not-suitable-for-ai-brainwave-english.html
+- en/news/2026-07-13-middle-school-english-vocabulary-before-grammar.html
+- en/news/2026-07-13-education-center-ai-english-cabin-pilot.html
 - en/news/2026-07-12-guaranteed-score-improvement-contract-explained.html
 - en/news/2026-07-12-gaokao-english-3500-words-to-reading.html
 - en/news/2026-07-12-from-vocabulary-to-writing-output.html
@@ -38,9 +41,6 @@
 - en/news/2026-07-10-zhongkao-english-score-improvement-workflow.html
 - en/news/2026-07-10-phonics-pronunciation-vocabulary-training-path.html
 - en/news/2026-07-10-middle-school-english-vocabulary-before-grammar.html
-- en/news/2026-07-09-who-is-not-suitable-for-ai-brainwave-english.html
-- en/news/2026-07-09-from-vocabulary-to-writing-output.html
-- en/news/2026-07-09-ai-english-learning-cabin-for-global-partners.html
 
 ## 4. 需要继续修复的SEO基础问题
 
