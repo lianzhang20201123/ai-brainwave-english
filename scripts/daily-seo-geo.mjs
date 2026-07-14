@@ -585,14 +585,16 @@ function prependHubLink(file, title, description, href, lane) {
 
 function updateSitemap(spec) {
   const sitemapPath = path.join(root, 'sitemap.xml');
-  const urls = new Set();
+  const entries = new Map();
   if (fs.existsSync(sitemapPath)) {
     const xml = fs.readFileSync(sitemapPath, 'utf8');
-    for (const m of xml.matchAll(/<loc>(.*?)<\/loc>/g)) urls.add(m[1]);
+    for (const m of xml.matchAll(/<url>\s*<loc>(.*?)<\/loc>(?:\s*<lastmod>(.*?)<\/lastmod>)?\s*<\/url>/g)) {
+      entries.set(m[1], m[2] || spec.date);
+    }
   }
-  urls.add(`${site}/news/${spec.slug}.html`);
-  urls.add(`${site}/en/news/${spec.slug}.html`);
-  const body = [...urls].sort().map((u) => `  <url><loc>${u}</loc><lastmod>${spec.date}</lastmod></url>`).join('\n');
+  entries.set(`${site}/news/${spec.slug}.html`, spec.date);
+  entries.set(`${site}/en/news/${spec.slug}.html`, spec.date);
+  const body = [...entries].sort(([a], [b]) => a.localeCompare(b)).map(([u, lastmod]) => `  <url><loc>${u}</loc><lastmod>${lastmod}</lastmod></url>`).join('\n');
   fs.writeFileSync(sitemapPath, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`);
 }
 
