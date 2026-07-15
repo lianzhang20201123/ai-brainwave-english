@@ -1,17 +1,20 @@
 {
   "date": "2026-07-15",
-  "generatedAt": "2026-07-14T23:08:31.111Z",
+  "generatedAt": "2026-07-15T00:05:52.719Z",
   "totals": {
-    "htmlPages": 418,
-    "sitemapUrls": 364,
-    "zhNews": 192,
-    "enNews": 165,
+    "htmlPages": 424,
+    "sitemapUrls": 370,
+    "zhNews": 195,
+    "enNews": 168,
     "zhTopics": 9,
     "enTopics": 9,
     "issueCount": 183
   },
   "latest": {
     "zhNews": [
+      "news/2026-07-15-zhongkao-english-score-improvement-workflow.html",
+      "news/2026-07-15-high-school-english-stuck-at-90.html",
+      "news/2026-07-15-english-program-add-on-for-learning-centers.html",
       "news/2026-07-14-zhongkao-english-score-improvement-workflow.html",
       "news/2026-07-14-learning-cabin-exit-test-and-review.html",
       "news/2026-07-14-china-edtech-ai-vocabulary-training-investor-note.html",
@@ -20,12 +23,12 @@
       "news/2026-07-13-education-center-ai-english-cabin-pilot.html",
       "news/2026-07-12-guaranteed-score-improvement-contract-explained.html",
       "news/2026-07-12-gaokao-english-3500-words-to-reading.html",
-      "news/2026-07-12-from-vocabulary-to-writing-output.html",
-      "news/2026-07-11-education-center-ai-english-cabin-pilot.html",
-      "news/2026-07-11-china-edtech-ai-vocabulary-training-investor-note.html",
-      "news/2026-07-11-child-remembers-words-but-cannot-use-them.html"
+      "news/2026-07-12-from-vocabulary-to-writing-output.html"
     ],
     "enNews": [
+      "en/news/2026-07-15-zhongkao-english-score-improvement-workflow.html",
+      "en/news/2026-07-15-high-school-english-stuck-at-90.html",
+      "en/news/2026-07-15-english-program-add-on-for-learning-centers.html",
       "en/news/2026-07-14-zhongkao-english-score-improvement-workflow.html",
       "en/news/2026-07-14-learning-cabin-exit-test-and-review.html",
       "en/news/2026-07-14-china-edtech-ai-vocabulary-training-investor-note.html",
@@ -34,10 +37,7 @@
       "en/news/2026-07-13-education-center-ai-english-cabin-pilot.html",
       "en/news/2026-07-12-guaranteed-score-improvement-contract-explained.html",
       "en/news/2026-07-12-gaokao-english-3500-words-to-reading.html",
-      "en/news/2026-07-12-from-vocabulary-to-writing-output.html",
-      "en/news/2026-07-11-education-center-ai-english-cabin-pilot.html",
-      "en/news/2026-07-11-china-edtech-ai-vocabulary-training-investor-note.html",
-      "en/news/2026-07-11-child-remembers-words-but-cannot-use-them.html"
+      "en/news/2026-07-12-from-vocabulary-to-writing-output.html"
     ]
   },
   "issues": [
