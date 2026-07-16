@@ -1,14 +1,14 @@
 {
   "date": "2026-07-17",
-  "generatedAt": "2026-07-16T23:23:11.222Z",
+  "generatedAt": "2026-07-16T23:25:55.684Z",
   "totals": {
     "htmlPages": 430,
-    "sitemapUrls": 377,
+    "sitemapUrls": 380,
     "zhNews": 198,
     "enNews": 171,
     "zhTopics": 9,
     "enTopics": 9,
-    "issueCount": 181
+    "issueCount": 175
   },
   "latest": {
     "zhNews": [
@@ -97,18 +97,12 @@
     "news/article-002.html: news page missing FAQPage JSON-LD",
     "news/article-003.html: news page missing Article JSON-LD",
     "news/article-003.html: news page missing FAQPage JSON-LD",
-    "news/article-004.html: missing canonical",
     "news/article-004.html: news page missing Article JSON-LD",
     "news/article-004.html: news page missing FAQPage JSON-LD",
-    "news/article-004.html: missing from sitemap.xml",
-    "news/article-005.html: missing canonical",
     "news/article-005.html: news page missing Article JSON-LD",
     "news/article-005.html: news page missing FAQPage JSON-LD",
-    "news/article-005.html: missing from sitemap.xml",
-    "news/article-006.html: missing canonical",
     "news/article-006.html: news page missing Article JSON-LD",
     "news/article-006.html: news page missing FAQPage JSON-LD",
-    "news/article-006.html: missing from sitemap.xml",
     "news/article-008.html: missing canonical",
     "news/article-008.html: news page missing Article JSON-LD",
     "news/article-008.html: news page missing FAQPage JSON-LD",
@@ -120,7 +114,13 @@
     "news/article-010.html: missing canonical",
     "news/article-010.html: news page missing Article JSON-LD",
     "news/article-010.html: news page missing FAQPage JSON-LD",
-    "news/article-010.html: missing from sitemap.xml"
+    "news/article-010.html: missing from sitemap.xml",
+    "news/article-011.html: missing canonical",
+    "news/article-011.html: news page missing Article JSON-LD",
+    "news/article-011.html: news page missing FAQPage JSON-LD",
+    "news/article-011.html: missing from sitemap.xml",
+    "news/article-012.html: missing canonical",
+    "news/article-012.html: news page missing Article JSON-LD"
   ],
   "notes": [
     "This report measures site publishing and SEO/GEO readiness, not real visitor traffic.",
