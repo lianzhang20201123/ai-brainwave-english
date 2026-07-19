@@ -1,17 +1,20 @@
 {
   "date": "2026-07-19",
-  "generatedAt": "2026-07-18T23:29:00.954Z",
+  "generatedAt": "2026-07-19T00:10:34.729Z",
   "totals": {
-    "htmlPages": 440,
-    "sitemapUrls": 394,
-    "zhNews": 203,
-    "enNews": 177,
+    "htmlPages": 446,
+    "sitemapUrls": 400,
+    "zhNews": 206,
+    "enNews": 180,
     "zhTopics": 9,
     "enTopics": 9,
     "issueCount": 168
   },
   "latest": {
     "zhNews": [
+      "news/2026-07-19-zhongkao-english-score-improvement-workflow.html",
+      "news/2026-07-19-who-is-not-suitable-for-ai-brainwave-english.html",
+      "news/2026-07-19-phonics-pronunciation-vocabulary-training-path.html",
       "news/2026-07-18-high-school-english-stuck-at-90.html",
       "news/2026-07-18-english-program-add-on-for-learning-centers.html",
       "news/2026-07-18-ai-english-learning-cabin-for-global-partners.html",
@@ -20,12 +23,12 @@
       "news/2026-07-17-child-remembers-words-but-cannot-use-them.html",
       "news/2026-07-16-phonics-pronunciation-vocabulary-training-path.html",
       "news/2026-07-16-guaranteed-score-improvement-contract-explained.html",
-      "news/2026-07-16-china-edtech-ai-vocabulary-training-investor-note.html",
-      "news/2026-07-15-zhongkao-english-score-improvement-workflow.html",
-      "news/2026-07-15-high-school-english-stuck-at-90.html",
-      "news/2026-07-15-english-program-add-on-for-learning-centers.html"
+      "news/2026-07-16-china-edtech-ai-vocabulary-training-investor-note.html"
     ],
     "enNews": [
+      "en/news/2026-07-19-zhongkao-english-score-improvement-workflow.html",
+      "en/news/2026-07-19-who-is-not-suitable-for-ai-brainwave-english.html",
+      "en/news/2026-07-19-phonics-pronunciation-vocabulary-training-path.html",
       "en/news/2026-07-18-high-school-english-stuck-at-90.html",
       "en/news/2026-07-18-english-program-add-on-for-learning-centers.html",
       "en/news/2026-07-18-ai-english-learning-cabin-for-global-partners.html",
@@ -34,10 +37,7 @@
       "en/news/2026-07-17-child-remembers-words-but-cannot-use-them.html",
       "en/news/2026-07-16-phonics-pronunciation-vocabulary-training-path.html",
       "en/news/2026-07-16-guaranteed-score-improvement-contract-explained.html",
-      "en/news/2026-07-16-china-edtech-ai-vocabulary-training-investor-note.html",
-      "en/news/2026-07-15-zhongkao-english-score-improvement-workflow.html",
-      "en/news/2026-07-15-high-school-english-stuck-at-90.html",
-      "en/news/2026-07-15-english-program-add-on-for-learning-centers.html"
+      "en/news/2026-07-16-china-edtech-ai-vocabulary-training-investor-note.html"
     ]
   },
   "issues": [
