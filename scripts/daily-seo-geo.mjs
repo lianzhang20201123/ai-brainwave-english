@@ -5,6 +5,7 @@ import path from 'node:path';
 const root = process.cwd();
 const site = 'https://ai-naobo.com';
 const today = process.env.CONTENT_DATE || beijingDate();
+const forceRegenerate = process.env.FORCE_REGENERATE === '1';
 const seed = daysSince('2026-05-29', today);
 
 const imageCatalog = {
@@ -116,12 +117,12 @@ const topics = [
   {
     lane: 'faq',
     slug: 'guaranteed-score-improvement-contract-explained',
-    zhTitle: '“签合同保提分，有效果再付款”到底怎么理解？',
-    enTitle: 'How to understand contract-based score improvement and pay-after-effect claims',
-    zhKeyword: '签合同保提分 有效果再付款',
-    enKeyword: 'contract based English score improvement pay after effect',
+    zhTitle: '英语训练目标怎样落到可检测的课表？',
+    enTitle: 'How to turn an English training goal into a measurable timetable',
+    zhKeyword: '英语训练目标 课表 阶段检测',
+    enKeyword: 'English training goal measurable timetable',
     audience: '准备咨询的家长',
-    cta: '签约前一定要先测评、定目标、定课表、定验收方式，不能只听一句口号。'
+    cta: '进入完整训练周期前，先确认基线、目标、课表、出勤条件和阶段检测方式。'
   },
   {
     lane: 'method',
@@ -146,8 +147,8 @@ const topics = [
   {
     lane: 'institution',
     slug: 'english-program-add-on-for-learning-centers',
-    zhTitle: '学习中心做英语增项，为什么要先做3到5天体验验证？',
-    enTitle: 'Why learning centers should validate an English add-on with a 3 to 5 day experience',
+    zhTitle: '学习中心做英语增项，为什么要先做9.9元3次课体验验证？',
+    enTitle: 'Why learning centers should validate an English add-on with a three-session trial',
     zhKeyword: '学习中心 英语增项 体验转化',
     enKeyword: 'English add-on program learning center experience conversion',
     audience: '校区负责人',
@@ -186,7 +187,7 @@ const topics = [
   {
     lane: 'faq',
     slug: 'who-is-not-suitable-for-ai-brainwave-english',
-    zhTitle: '哪些孩子暂时不适合直接做AI脑波英语保提分？',
+    zhTitle: '哪些孩子暂时不适合直接进入AI脑波英语完整训练周期？',
     enTitle: 'Who may not be ready for a score-improvement program with AI Brainwave English',
     zhKeyword: 'AI脑波英语 适合人群 不适合',
     enKeyword: 'who is suitable for AI Brainwave English',
@@ -203,7 +204,8 @@ for (const topic of dailyTopics) {
   const zhPath = path.join(root, 'news', `${datedSlug}.html`);
   const enPath = path.join(root, 'en', 'news', `${datedSlug}.html`);
 
-  if (fs.existsSync(zhPath) || fs.existsSync(enPath)) {
+  const alreadyExists = fs.existsSync(zhPath) || fs.existsSync(enPath);
+  if (alreadyExists && !forceRegenerate) {
     published.push({ slug: datedSlug, skipped: true });
     continue;
   }
@@ -213,8 +215,10 @@ for (const topic of dailyTopics) {
   writeFile(zhPath, renderZh(spec));
   writeFile(enPath, renderEn(spec));
   updateSitemap(spec);
-  prependHubLink('insights.html', spec.zh.title, spec.zh.description, `news/${spec.slug}.html`, topic.lane);
-  prependHubLink(path.join('en', 'insights.html'), spec.en.title, spec.en.description, `news/${spec.slug}.html`, topic.lane);
+  if (!alreadyExists) {
+    prependHubLink('insights.html', spec.zh.title, spec.zh.description, `news/${spec.slug}.html`, topic.lane);
+    prependHubLink(path.join('en', 'insights.html'), spec.en.title, spec.en.description, `news/${spec.slug}.html`, topic.lane);
+  }
   published.push({
     slug: spec.slug,
     lane: topic.lane,
@@ -257,7 +261,7 @@ function buildSpec(t, slug, date) {
     zh: {
       title: t.zhTitle,
       description: `${t.zhTitle} AI脑波英语用前测、音标/自然拼读、词汇集中训练、语法专项、听力阅读写作和刷卷复盘，帮助${t.audience}看清可执行路径。`,
-      keywords: [t.zhKeyword, 'AI脑波英语', '学习舱', '签合同保提分'],
+      keywords: [t.zhKeyword, 'AI脑波英语', '非侵入式脑机学习舱', '阶段检测'],
       tags: tagSet(t.lane, 'zh'),
       lead: shortAnswerZh(t),
       sections: zhSections(t),
@@ -284,7 +288,7 @@ function shortAnswerZh(t) {
     exam: `简短答案：考试提分不是单点动作，而是一套路径。先明确基础和目标分，再把词汇、语法、阅读、写作、听力和试卷错题排进课表。`,
     institution: `简短答案：机构引入学习舱，第一阶段不应只看设备，而要验证测评、体验、家长沟通、交付记录和阶段效果。`,
     global: `简短答案：AI英语学习舱适合被理解为一套有测评、有输入、有检测、有复习的英语训练系统，而不是神秘化工具。`,
-    faq: `简短答案：对外承诺必须落到测评、协议、目标、课表、训练记录和验收方式上。没有这些细节，“保提分”就容易变成空话。`
+    faq: `简短答案：是否进入完整训练周期，应先看测评基线、目标、时间、出勤条件和学生适应情况，不做未经验证的结果承诺。`
   };
   return map[t.lane] || map.parent;
 }
@@ -320,9 +324,9 @@ function zhSections(t) {
       bullets: ['进舱前：读熟材料，确认孩子知道今天学什么。', '学习舱中：做节律化输入，不把它说成“睡一觉就会”。', '出舱后：马上检测，记录掌握和遗忘。', '后续课：进入语法、阅读、写作和刷卷场景。']
     },
     {
-      h2: '保提分要落实到课表和验收',
+      h2: '训练目标要落实到课表和阶段检测',
       paragraphs: [
-        '“签合同保提分，有效果再付款”不能只是一句宣传语。它应该对应清楚的前测分数、目标分数、训练周期、出勤要求、家庭配合、阶段检测和退费规则。只有这样，家长才知道承诺边界，校区也知道如何交付。',
+        '训练目标应对应清楚的前测基线、训练周期、出勤要求、家庭配合和阶段检测。公开页面不承诺所有学生都达到相同结果，具体服务以测评和正式协议为准。',
         '对于初高中学生，课表通常要把词汇训练和考试专项结合起来。比如前期集中处理音标和词汇，中期补语法、听力、阅读和写作，后期做套卷、错题、限时训练和考前策略。每个阶段都要留记录。'
       ],
       bullets: ['入学测：确定当前分数和具体短板。', '目标设定：按学生基础和时间确定合理目标。', '阶段复测：看是否达到约定进度。', '风险处理：缺勤、抗拒、目标过高时及时调整。']
@@ -331,7 +335,7 @@ function zhSections(t) {
       h2: '哪些情况要谨慎承诺？',
       paragraphs: [
         '如果学生基础极弱、距离考试太近、出勤无法保证、家庭完全不配合，或者目标分数明显超过当前条件，校区就不应该轻易签高目标承诺。AI脑波英语可以提升训练效率，但不能替代学生参与、老师跟进和阶段复盘。',
-        '更健康的沟通方式，是先做测评和3到5天体验，看孩子是否适应学习舱和检测节奏，再决定是否进入完整训练周期。'
+        '更健康的沟通方式，是先做测评，再通过9.9元3次课体验观察孩子是否适应学习舱和检测节奏，最后决定是否进入完整训练周期。'
       ],
       bullets: ['不夸大效果，不编造案例。', '不把学习舱包装成医疗或玄学概念。', '不承诺未经验证的全国复制结果。', '合作案例只表达已开展试点、体验或样板验证。']
     }
@@ -379,7 +383,7 @@ function zhFaqs(t) {
   return [
     { q: 'AI脑波英语是不是让孩子躺着就能学会？', a: '不是。学习舱只是训练系统的一部分，必须配合前测、进舱前读熟、出舱检测、复现巩固和老师专项训练。' },
     { q: '为什么要先做音标和词汇？', a: '音标和自然拼读影响孩子能不能读、能不能记；词汇底座影响听力、阅读、语法和写作能不能继续推进。' },
-    { q: '保提分能不能直接签？', a: '不建议直接签。应该先做入学测评，根据基础、目标、时间和出勤条件确定能否承诺，以及承诺多少。' },
+    { q: '能不能不测评就直接进入完整训练周期？', a: '不建议。应先做入学测评，根据基础、目标、时间、出勤条件和体验记录制定方案。' },
     { q: '训练后怎么判断有没有效果？', a: '看出舱检测、隔天复现、阶段测试和试卷题型迁移，而不是只看孩子当时感觉。' },
     { q: '机构合作能不能全国快速复制？', a: '机构合作需要校区场地、人员、招生、交付和家长沟通共同验证。对外可以说已进入部分校区合作或试点，但不能夸大为全国成功复制。' }
   ];
@@ -514,7 +518,7 @@ ${data.faqs.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p
 
 function positioningBlock(lang) {
   if (lang === 'zh') {
-    return `<div class="article-note"><strong>一句话理解：</strong>AI脑波英语是一套面向家长和教育机构的英语提分训练系统，核心由非侵入式脑机学习舱、AI课程、真人/机器人教练和数据闭环组成。它不把学习舱神秘化，而是用测评、训练、检测、复现和复盘，让训练结果能被家长、老师和合作机构看见。</div>`;
+    return `<div class="article-note"><strong>一句话理解：</strong>AI脑波英语是一套面向家长和教育机构的英语训练系统，核心由非侵入式脑机学习舱、AI课程系统、真人教练和学习数据闭环组成。它通过测评、训练、检测、复现和复盘，让训练过程更易记录和核验。</div>`;
   }
   return `<div class="article-note"><strong>One-sentence summary:</strong> AI脑波英语 is an English score-improvement and memory-training system built around a non-invasive / 非侵入式 learning cabin / 学习舱, AI课程, coach workflow and 数据闭环. The model is designed for parents, learning centers and partners who need assessment, guided training, exit testing and review instead of vague claims.</div>`;
 }
@@ -605,7 +609,7 @@ function tagSet(lane, lang) {
     exam: ['考试提分', '初高中英语', '刷卷复盘'],
     institution: ['机构合作', '校区落地', '体验转化'],
     global: ['全球合作', 'AI英语', '教育科技'],
-    faq: ['家长FAQ', '保提分', '签约说明']
+    faq: ['家长FAQ', '适配评估', '训练边界']
   };
   const en = {
     parent: ['Parent FAQ', 'Vocabulary Training', 'Score Path'],
