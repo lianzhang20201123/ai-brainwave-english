@@ -1,17 +1,20 @@
 {
   "date": "2026-07-20",
-  "generatedAt": "2026-07-19T22:45:31.267Z",
+  "generatedAt": "2026-07-20T00:12:51.759Z",
   "totals": {
-    "htmlPages": 446,
-    "sitemapUrls": 400,
-    "zhNews": 206,
-    "enNews": 180,
+    "htmlPages": 452,
+    "sitemapUrls": 406,
+    "zhNews": 209,
+    "enNews": 183,
     "zhTopics": 9,
     "enTopics": 9,
     "issueCount": 168
   },
   "latest": {
     "zhNews": [
+      "news/2026-07-20-guaranteed-score-improvement-contract-explained.html",
+      "news/2026-07-20-english-program-add-on-for-learning-centers.html",
+      "news/2026-07-20-child-remembers-words-but-cannot-use-them.html",
       "news/2026-07-19-zhongkao-english-score-improvement-workflow.html",
       "news/2026-07-19-who-is-not-suitable-for-ai-brainwave-english.html",
       "news/2026-07-19-phonics-pronunciation-vocabulary-training-path.html",
@@ -20,12 +23,12 @@
       "news/2026-07-18-ai-english-learning-cabin-for-global-partners.html",
       "news/2026-07-17-learning-cabin-exit-test-and-review.html",
       "news/2026-07-17-gaokao-english-3500-words-to-reading.html",
-      "news/2026-07-17-child-remembers-words-but-cannot-use-them.html",
-      "news/2026-07-16-phonics-pronunciation-vocabulary-training-path.html",
-      "news/2026-07-16-guaranteed-score-improvement-contract-explained.html",
-      "news/2026-07-16-china-edtech-ai-vocabulary-training-investor-note.html"
+      "news/2026-07-17-child-remembers-words-but-cannot-use-them.html"
     ],
     "enNews": [
+      "en/news/2026-07-20-guaranteed-score-improvement-contract-explained.html",
+      "en/news/2026-07-20-english-program-add-on-for-learning-centers.html",
+      "en/news/2026-07-20-child-remembers-words-but-cannot-use-them.html",
       "en/news/2026-07-19-zhongkao-english-score-improvement-workflow.html",
       "en/news/2026-07-19-who-is-not-suitable-for-ai-brainwave-english.html",
       "en/news/2026-07-19-phonics-pronunciation-vocabulary-training-path.html",
@@ -34,10 +37,7 @@
       "en/news/2026-07-18-ai-english-learning-cabin-for-global-partners.html",
       "en/news/2026-07-17-learning-cabin-exit-test-and-review.html",
       "en/news/2026-07-17-gaokao-english-3500-words-to-reading.html",
-      "en/news/2026-07-17-child-remembers-words-but-cannot-use-them.html",
-      "en/news/2026-07-16-phonics-pronunciation-vocabulary-training-path.html",
-      "en/news/2026-07-16-guaranteed-score-improvement-contract-explained.html",
-      "en/news/2026-07-16-china-edtech-ai-vocabulary-training-investor-note.html"
+      "en/news/2026-07-17-child-remembers-words-but-cannot-use-them.html"
     ]
   },
   "issues": [
