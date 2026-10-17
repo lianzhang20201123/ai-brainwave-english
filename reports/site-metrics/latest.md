@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-10-16
+日期：2026-10-17
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：980
-- Sitemap URL数：934
-- 中文文章数：473
-- 英文文章数：447
+- HTML页面总数：986
+- Sitemap URL数：940
+- 中文文章数：476
+- 英文文章数：450
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-10-17-middle-school-english-vocabulary-before-grammar.html
+- news/2026-10-17-education-center-ai-english-cabin-pilot.html
+- news/2026-10-17-china-edtech-ai-vocabulary-training-investor-note.html
 - news/2026-10-16-zhongkao-english-score-improvement-workflow.html
 - news/2026-10-16-high-school-english-stuck-at-90.html
 - news/2026-10-16-from-vocabulary-to-writing-output.html
@@ -23,12 +26,12 @@
 - news/2026-10-14-middle-school-english-vocabulary-before-grammar.html
 - news/2026-10-14-gaokao-english-3500-words-to-reading.html
 - news/2026-10-14-education-center-ai-english-cabin-pilot.html
-- news/2026-10-13-gaokao-english-3500-words-to-reading.html
-- news/2026-10-13-from-vocabulary-to-writing-output.html
-- news/2026-10-13-ai-english-learning-cabin-for-global-partners.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-10-17-middle-school-english-vocabulary-before-grammar.html
+- en/news/2026-10-17-education-center-ai-english-cabin-pilot.html
+- en/news/2026-10-17-china-edtech-ai-vocabulary-training-investor-note.html
 - en/news/2026-10-16-zhongkao-english-score-improvement-workflow.html
 - en/news/2026-10-16-high-school-english-stuck-at-90.html
 - en/news/2026-10-16-from-vocabulary-to-writing-output.html
@@ -38,9 +41,6 @@
 - en/news/2026-10-14-middle-school-english-vocabulary-before-grammar.html
 - en/news/2026-10-14-gaokao-english-3500-words-to-reading.html
 - en/news/2026-10-14-education-center-ai-english-cabin-pilot.html
-- en/news/2026-10-13-gaokao-english-3500-words-to-reading.html
-- en/news/2026-10-13-from-vocabulary-to-writing-output.html
-- en/news/2026-10-13-ai-english-learning-cabin-for-global-partners.html
 
 ## 4. 需要继续修复的SEO基础问题
 
