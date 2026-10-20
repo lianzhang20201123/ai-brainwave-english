@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-10-19
+日期：2026-10-20
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：998
-- Sitemap URL数：952
-- 中文文章数：482
-- 英文文章数：456
+- HTML页面总数：1004
+- Sitemap URL数：958
+- 中文文章数：485
+- 英文文章数：459
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-10-20-zhongkao-english-score-improvement-workflow.html
+- news/2026-10-20-phonics-pronunciation-vocabulary-training-path.html
+- news/2026-10-20-china-edtech-ai-vocabulary-training-investor-note.html
 - news/2026-10-19-who-is-not-suitable-for-ai-brainwave-english.html
 - news/2026-10-19-high-school-english-stuck-at-90.html
 - news/2026-10-19-education-center-ai-english-cabin-pilot.html
@@ -23,12 +26,12 @@
 - news/2026-10-17-middle-school-english-vocabulary-before-grammar.html
 - news/2026-10-17-education-center-ai-english-cabin-pilot.html
 - news/2026-10-17-china-edtech-ai-vocabulary-training-investor-note.html
-- news/2026-10-16-zhongkao-english-score-improvement-workflow.html
-- news/2026-10-16-high-school-english-stuck-at-90.html
-- news/2026-10-16-from-vocabulary-to-writing-output.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-10-20-zhongkao-english-score-improvement-workflow.html
+- en/news/2026-10-20-phonics-pronunciation-vocabulary-training-path.html
+- en/news/2026-10-20-china-edtech-ai-vocabulary-training-investor-note.html
 - en/news/2026-10-19-who-is-not-suitable-for-ai-brainwave-english.html
 - en/news/2026-10-19-high-school-english-stuck-at-90.html
 - en/news/2026-10-19-education-center-ai-english-cabin-pilot.html
@@ -38,9 +41,6 @@
 - en/news/2026-10-17-middle-school-english-vocabulary-before-grammar.html
 - en/news/2026-10-17-education-center-ai-english-cabin-pilot.html
 - en/news/2026-10-17-china-edtech-ai-vocabulary-training-investor-note.html
-- en/news/2026-10-16-zhongkao-english-score-improvement-workflow.html
-- en/news/2026-10-16-high-school-english-stuck-at-90.html
-- en/news/2026-10-16-from-vocabulary-to-writing-output.html
 
 ## 4. 需要继续修复的SEO基础问题
 
