@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-10-22
+日期：2026-10-23
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：1016
-- Sitemap URL数：970
-- 中文文章数：491
-- 英文文章数：465
+- HTML页面总数：1022
+- Sitemap URL数：976
+- 中文文章数：494
+- 英文文章数：468
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-10-23-phonics-pronunciation-vocabulary-training-path.html
+- news/2026-10-23-middle-school-english-vocabulary-before-grammar.html
+- news/2026-10-23-gaokao-english-3500-words-to-reading.html
 - news/2026-10-22-guaranteed-score-improvement-contract-explained.html
 - news/2026-10-22-from-vocabulary-to-writing-output.html
 - news/2026-10-22-china-edtech-ai-vocabulary-training-investor-note.html
@@ -23,12 +26,12 @@
 - news/2026-10-20-zhongkao-english-score-improvement-workflow.html
 - news/2026-10-20-phonics-pronunciation-vocabulary-training-path.html
 - news/2026-10-20-china-edtech-ai-vocabulary-training-investor-note.html
-- news/2026-10-19-who-is-not-suitable-for-ai-brainwave-english.html
-- news/2026-10-19-high-school-english-stuck-at-90.html
-- news/2026-10-19-education-center-ai-english-cabin-pilot.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-10-23-phonics-pronunciation-vocabulary-training-path.html
+- en/news/2026-10-23-middle-school-english-vocabulary-before-grammar.html
+- en/news/2026-10-23-gaokao-english-3500-words-to-reading.html
 - en/news/2026-10-22-guaranteed-score-improvement-contract-explained.html
 - en/news/2026-10-22-from-vocabulary-to-writing-output.html
 - en/news/2026-10-22-china-edtech-ai-vocabulary-training-investor-note.html
@@ -38,9 +41,6 @@
 - en/news/2026-10-20-zhongkao-english-score-improvement-workflow.html
 - en/news/2026-10-20-phonics-pronunciation-vocabulary-training-path.html
 - en/news/2026-10-20-china-edtech-ai-vocabulary-training-investor-note.html
-- en/news/2026-10-19-who-is-not-suitable-for-ai-brainwave-english.html
-- en/news/2026-10-19-high-school-english-stuck-at-90.html
-- en/news/2026-10-19-education-center-ai-english-cabin-pilot.html
 
 ## 4. 需要继续修复的SEO基础问题
 
