@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-10-23
+日期：2026-10-24
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：1022
-- Sitemap URL数：976
-- 中文文章数：494
-- 英文文章数：468
+- HTML页面总数：1028
+- Sitemap URL数：982
+- 中文文章数：497
+- 英文文章数：471
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-10-24-english-program-add-on-for-learning-centers.html
+- news/2026-10-24-child-remembers-words-but-cannot-use-them.html
+- news/2026-10-24-ai-english-learning-cabin-for-global-partners.html
 - news/2026-10-23-phonics-pronunciation-vocabulary-training-path.html
 - news/2026-10-23-middle-school-english-vocabulary-before-grammar.html
 - news/2026-10-23-gaokao-english-3500-words-to-reading.html
@@ -23,12 +26,12 @@
 - news/2026-10-21-zhongkao-english-score-improvement-workflow.html
 - news/2026-10-21-english-program-add-on-for-learning-centers.html
 - news/2026-10-21-child-remembers-words-but-cannot-use-them.html
-- news/2026-10-20-zhongkao-english-score-improvement-workflow.html
-- news/2026-10-20-phonics-pronunciation-vocabulary-training-path.html
-- news/2026-10-20-china-edtech-ai-vocabulary-training-investor-note.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-10-24-english-program-add-on-for-learning-centers.html
+- en/news/2026-10-24-child-remembers-words-but-cannot-use-them.html
+- en/news/2026-10-24-ai-english-learning-cabin-for-global-partners.html
 - en/news/2026-10-23-phonics-pronunciation-vocabulary-training-path.html
 - en/news/2026-10-23-middle-school-english-vocabulary-before-grammar.html
 - en/news/2026-10-23-gaokao-english-3500-words-to-reading.html
@@ -38,9 +41,6 @@
 - en/news/2026-10-21-zhongkao-english-score-improvement-workflow.html
 - en/news/2026-10-21-english-program-add-on-for-learning-centers.html
 - en/news/2026-10-21-child-remembers-words-but-cannot-use-them.html
-- en/news/2026-10-20-zhongkao-english-score-improvement-workflow.html
-- en/news/2026-10-20-phonics-pronunciation-vocabulary-training-path.html
-- en/news/2026-10-20-china-edtech-ai-vocabulary-training-investor-note.html
 
 ## 4. 需要继续修复的SEO基础问题
 
