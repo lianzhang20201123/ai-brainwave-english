@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-10-24
+日期：2026-10-25
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：1028
-- Sitemap URL数：982
-- 中文文章数：497
-- 英文文章数：471
+- HTML页面总数：1034
+- Sitemap URL数：988
+- 中文文章数：500
+- 英文文章数：474
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-10-25-zhongkao-english-score-improvement-workflow.html
+- news/2026-10-25-who-is-not-suitable-for-ai-brainwave-english.html
+- news/2026-10-25-from-vocabulary-to-writing-output.html
 - news/2026-10-24-english-program-add-on-for-learning-centers.html
 - news/2026-10-24-child-remembers-words-but-cannot-use-them.html
 - news/2026-10-24-ai-english-learning-cabin-for-global-partners.html
@@ -23,12 +26,12 @@
 - news/2026-10-22-guaranteed-score-improvement-contract-explained.html
 - news/2026-10-22-from-vocabulary-to-writing-output.html
 - news/2026-10-22-china-edtech-ai-vocabulary-training-investor-note.html
-- news/2026-10-21-zhongkao-english-score-improvement-workflow.html
-- news/2026-10-21-english-program-add-on-for-learning-centers.html
-- news/2026-10-21-child-remembers-words-but-cannot-use-them.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-10-25-zhongkao-english-score-improvement-workflow.html
+- en/news/2026-10-25-who-is-not-suitable-for-ai-brainwave-english.html
+- en/news/2026-10-25-from-vocabulary-to-writing-output.html
 - en/news/2026-10-24-english-program-add-on-for-learning-centers.html
 - en/news/2026-10-24-child-remembers-words-but-cannot-use-them.html
 - en/news/2026-10-24-ai-english-learning-cabin-for-global-partners.html
@@ -38,9 +41,6 @@
 - en/news/2026-10-22-guaranteed-score-improvement-contract-explained.html
 - en/news/2026-10-22-from-vocabulary-to-writing-output.html
 - en/news/2026-10-22-china-edtech-ai-vocabulary-training-investor-note.html
-- en/news/2026-10-21-zhongkao-english-score-improvement-workflow.html
-- en/news/2026-10-21-english-program-add-on-for-learning-centers.html
-- en/news/2026-10-21-child-remembers-words-but-cannot-use-them.html
 
 ## 4. 需要继续修复的SEO基础问题
 
