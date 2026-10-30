@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-10-29
+日期：2026-10-30
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：1058
-- Sitemap URL数：1012
-- 中文文章数：512
-- 英文文章数：486
+- HTML页面总数：1064
+- Sitemap URL数：1018
+- 中文文章数：515
+- 英文文章数：489
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-10-30-zhongkao-english-score-improvement-workflow.html
+- news/2026-10-30-learning-cabin-exit-test-and-review.html
+- news/2026-10-30-child-remembers-words-but-cannot-use-them.html
 - news/2026-10-29-who-is-not-suitable-for-ai-brainwave-english.html
 - news/2026-10-29-phonics-pronunciation-vocabulary-training-path.html
 - news/2026-10-29-ai-english-learning-cabin-for-global-partners.html
@@ -23,12 +26,12 @@
 - news/2026-10-27-learning-cabin-exit-test-and-review.html
 - news/2026-10-27-gaokao-english-3500-words-to-reading.html
 - news/2026-10-27-ai-english-learning-cabin-for-global-partners.html
-- news/2026-10-26-middle-school-english-vocabulary-before-grammar.html
-- news/2026-10-26-guaranteed-score-improvement-contract-explained.html
-- news/2026-10-26-english-program-add-on-for-learning-centers.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-10-30-zhongkao-english-score-improvement-workflow.html
+- en/news/2026-10-30-learning-cabin-exit-test-and-review.html
+- en/news/2026-10-30-child-remembers-words-but-cannot-use-them.html
 - en/news/2026-10-29-who-is-not-suitable-for-ai-brainwave-english.html
 - en/news/2026-10-29-phonics-pronunciation-vocabulary-training-path.html
 - en/news/2026-10-29-ai-english-learning-cabin-for-global-partners.html
@@ -38,9 +41,6 @@
 - en/news/2026-10-27-learning-cabin-exit-test-and-review.html
 - en/news/2026-10-27-gaokao-english-3500-words-to-reading.html
 - en/news/2026-10-27-ai-english-learning-cabin-for-global-partners.html
-- en/news/2026-10-26-middle-school-english-vocabulary-before-grammar.html
-- en/news/2026-10-26-guaranteed-score-improvement-contract-explained.html
-- en/news/2026-10-26-english-program-add-on-for-learning-centers.html
 
 ## 4. 需要继续修复的SEO基础问题
 
