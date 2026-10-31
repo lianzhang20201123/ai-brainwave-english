@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-10-30
+日期：2026-10-31
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：1064
-- Sitemap URL数：1018
-- 中文文章数：515
-- 英文文章数：489
+- HTML页面总数：1070
+- Sitemap URL数：1024
+- 中文文章数：518
+- 英文文章数：492
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-10-31-high-school-english-stuck-at-90.html
+- news/2026-10-31-education-center-ai-english-cabin-pilot.html
+- news/2026-10-31-china-edtech-ai-vocabulary-training-investor-note.html
 - news/2026-10-30-zhongkao-english-score-improvement-workflow.html
 - news/2026-10-30-learning-cabin-exit-test-and-review.html
 - news/2026-10-30-child-remembers-words-but-cannot-use-them.html
@@ -23,12 +26,12 @@
 - news/2026-10-28-high-school-english-stuck-at-90.html
 - news/2026-10-28-gaokao-english-3500-words-to-reading.html
 - news/2026-10-28-education-center-ai-english-cabin-pilot.html
-- news/2026-10-27-learning-cabin-exit-test-and-review.html
-- news/2026-10-27-gaokao-english-3500-words-to-reading.html
-- news/2026-10-27-ai-english-learning-cabin-for-global-partners.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-10-31-high-school-english-stuck-at-90.html
+- en/news/2026-10-31-education-center-ai-english-cabin-pilot.html
+- en/news/2026-10-31-china-edtech-ai-vocabulary-training-investor-note.html
 - en/news/2026-10-30-zhongkao-english-score-improvement-workflow.html
 - en/news/2026-10-30-learning-cabin-exit-test-and-review.html
 - en/news/2026-10-30-child-remembers-words-but-cannot-use-them.html
@@ -38,9 +41,6 @@
 - en/news/2026-10-28-high-school-english-stuck-at-90.html
 - en/news/2026-10-28-gaokao-english-3500-words-to-reading.html
 - en/news/2026-10-28-education-center-ai-english-cabin-pilot.html
-- en/news/2026-10-27-learning-cabin-exit-test-and-review.html
-- en/news/2026-10-27-gaokao-english-3500-words-to-reading.html
-- en/news/2026-10-27-ai-english-learning-cabin-for-global-partners.html
 
 ## 4. 需要继续修复的SEO基础问题
 
