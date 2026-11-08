@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-11-07
+日期：2026-11-08
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：1112
-- Sitemap URL数：1066
-- 中文文章数：539
-- 英文文章数：513
+- HTML页面总数：1118
+- Sitemap URL数：1072
+- 中文文章数：542
+- 英文文章数：516
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-11-08-zhongkao-english-score-improvement-workflow.html
+- news/2026-11-08-who-is-not-suitable-for-ai-brainwave-english.html
+- news/2026-11-08-learning-cabin-exit-test-and-review.html
 - news/2026-11-07-middle-school-english-vocabulary-before-grammar.html
 - news/2026-11-07-english-program-add-on-for-learning-centers.html
 - news/2026-11-07-ai-english-learning-cabin-for-global-partners.html
@@ -23,12 +26,12 @@
 - news/2026-11-05-learning-cabin-exit-test-and-review.html
 - news/2026-11-05-guaranteed-score-improvement-contract-explained.html
 - news/2026-11-05-china-edtech-ai-vocabulary-training-investor-note.html
-- news/2026-11-04-zhongkao-english-score-improvement-workflow.html
-- news/2026-11-04-middle-school-english-vocabulary-before-grammar.html
-- news/2026-11-04-english-program-add-on-for-learning-centers.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-11-08-zhongkao-english-score-improvement-workflow.html
+- en/news/2026-11-08-who-is-not-suitable-for-ai-brainwave-english.html
+- en/news/2026-11-08-learning-cabin-exit-test-and-review.html
 - en/news/2026-11-07-middle-school-english-vocabulary-before-grammar.html
 - en/news/2026-11-07-english-program-add-on-for-learning-centers.html
 - en/news/2026-11-07-ai-english-learning-cabin-for-global-partners.html
@@ -38,9 +41,6 @@
 - en/news/2026-11-05-learning-cabin-exit-test-and-review.html
 - en/news/2026-11-05-guaranteed-score-improvement-contract-explained.html
 - en/news/2026-11-05-china-edtech-ai-vocabulary-training-investor-note.html
-- en/news/2026-11-04-zhongkao-english-score-improvement-workflow.html
-- en/news/2026-11-04-middle-school-english-vocabulary-before-grammar.html
-- en/news/2026-11-04-english-program-add-on-for-learning-centers.html
 
 ## 4. 需要继续修复的SEO基础问题
 
