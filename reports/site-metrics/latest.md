@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-11-09
+日期：2026-11-10
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：1124
-- Sitemap URL数：1078
-- 中文文章数：545
-- 英文文章数：519
+- HTML页面总数：1130
+- Sitemap URL数：1084
+- 中文文章数：548
+- 英文文章数：522
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-11-10-phonics-pronunciation-vocabulary-training-path.html
+- news/2026-11-10-gaokao-english-3500-words-to-reading.html
+- news/2026-11-10-ai-english-learning-cabin-for-global-partners.html
 - news/2026-11-09-high-school-english-stuck-at-90.html
 - news/2026-11-09-guaranteed-score-improvement-contract-explained.html
 - news/2026-11-09-english-program-add-on-for-learning-centers.html
@@ -23,12 +26,12 @@
 - news/2026-11-07-middle-school-english-vocabulary-before-grammar.html
 - news/2026-11-07-english-program-add-on-for-learning-centers.html
 - news/2026-11-07-ai-english-learning-cabin-for-global-partners.html
-- news/2026-11-06-high-school-english-stuck-at-90.html
-- news/2026-11-06-gaokao-english-3500-words-to-reading.html
-- news/2026-11-06-from-vocabulary-to-writing-output.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-11-10-phonics-pronunciation-vocabulary-training-path.html
+- en/news/2026-11-10-gaokao-english-3500-words-to-reading.html
+- en/news/2026-11-10-ai-english-learning-cabin-for-global-partners.html
 - en/news/2026-11-09-high-school-english-stuck-at-90.html
 - en/news/2026-11-09-guaranteed-score-improvement-contract-explained.html
 - en/news/2026-11-09-english-program-add-on-for-learning-centers.html
@@ -38,9 +41,6 @@
 - en/news/2026-11-07-middle-school-english-vocabulary-before-grammar.html
 - en/news/2026-11-07-english-program-add-on-for-learning-centers.html
 - en/news/2026-11-07-ai-english-learning-cabin-for-global-partners.html
-- en/news/2026-11-06-high-school-english-stuck-at-90.html
-- en/news/2026-11-06-gaokao-english-3500-words-to-reading.html
-- en/news/2026-11-06-from-vocabulary-to-writing-output.html
 
 ## 4. 需要继续修复的SEO基础问题
 
