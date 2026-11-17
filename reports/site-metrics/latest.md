@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-11-16
+日期：2026-11-17
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：1166
-- Sitemap URL数：1120
-- 中文文章数：566
-- 英文文章数：540
+- HTML页面总数：1172
+- Sitemap URL数：1126
+- 中文文章数：569
+- 英文文章数：543
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-11-17-zhongkao-english-score-improvement-workflow.html
+- news/2026-11-17-learning-cabin-exit-test-and-review.html
+- news/2026-11-17-china-edtech-ai-vocabulary-training-investor-note.html
 - news/2026-11-16-who-is-not-suitable-for-ai-brainwave-english.html
 - news/2026-11-16-middle-school-english-vocabulary-before-grammar.html
 - news/2026-11-16-education-center-ai-english-cabin-pilot.html
@@ -23,12 +26,12 @@
 - news/2026-11-14-education-center-ai-english-cabin-pilot.html
 - news/2026-11-14-china-edtech-ai-vocabulary-training-investor-note.html
 - news/2026-11-14-child-remembers-words-but-cannot-use-them.html
-- news/2026-11-13-zhongkao-english-score-improvement-workflow.html
-- news/2026-11-13-phonics-pronunciation-vocabulary-training-path.html
-- news/2026-11-13-middle-school-english-vocabulary-before-grammar.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-11-17-zhongkao-english-score-improvement-workflow.html
+- en/news/2026-11-17-learning-cabin-exit-test-and-review.html
+- en/news/2026-11-17-china-edtech-ai-vocabulary-training-investor-note.html
 - en/news/2026-11-16-who-is-not-suitable-for-ai-brainwave-english.html
 - en/news/2026-11-16-middle-school-english-vocabulary-before-grammar.html
 - en/news/2026-11-16-education-center-ai-english-cabin-pilot.html
@@ -38,9 +41,6 @@
 - en/news/2026-11-14-education-center-ai-english-cabin-pilot.html
 - en/news/2026-11-14-china-edtech-ai-vocabulary-training-investor-note.html
 - en/news/2026-11-14-child-remembers-words-but-cannot-use-them.html
-- en/news/2026-11-13-zhongkao-english-score-improvement-workflow.html
-- en/news/2026-11-13-phonics-pronunciation-vocabulary-training-path.html
-- en/news/2026-11-13-middle-school-english-vocabulary-before-grammar.html
 
 ## 4. 需要继续修复的SEO基础问题
 
