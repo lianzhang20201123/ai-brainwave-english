@@ -1,19 +1,22 @@
 # AI脑波英语官网数据日报
 
-日期：2026-11-21
+日期：2026-11-22
 
 ## 1. 发布与SEO/GEO健康
 
-- HTML页面总数：1196
-- Sitemap URL数：1150
-- 中文文章数：581
-- 英文文章数：555
+- HTML页面总数：1202
+- Sitemap URL数：1156
+- 中文文章数：584
+- 英文文章数：558
 - 中文专题页数：9
 - 英文专题页数：9
 - 结构/收录准备问题数：168
 
 ## 2. 最新中文文章
 
+- news/2026-11-22-zhongkao-english-score-improvement-workflow.html
+- news/2026-11-22-who-is-not-suitable-for-ai-brainwave-english.html
+- news/2026-11-22-phonics-pronunciation-vocabulary-training-path.html
 - news/2026-11-21-high-school-english-stuck-at-90.html
 - news/2026-11-21-english-program-add-on-for-learning-centers.html
 - news/2026-11-21-ai-english-learning-cabin-for-global-partners.html
@@ -23,12 +26,12 @@
 - news/2026-11-19-phonics-pronunciation-vocabulary-training-path.html
 - news/2026-11-19-guaranteed-score-improvement-contract-explained.html
 - news/2026-11-19-china-edtech-ai-vocabulary-training-investor-note.html
-- news/2026-11-18-zhongkao-english-score-improvement-workflow.html
-- news/2026-11-18-high-school-english-stuck-at-90.html
-- news/2026-11-18-english-program-add-on-for-learning-centers.html
 
 ## 3. Latest English Articles
 
+- en/news/2026-11-22-zhongkao-english-score-improvement-workflow.html
+- en/news/2026-11-22-who-is-not-suitable-for-ai-brainwave-english.html
+- en/news/2026-11-22-phonics-pronunciation-vocabulary-training-path.html
 - en/news/2026-11-21-high-school-english-stuck-at-90.html
 - en/news/2026-11-21-english-program-add-on-for-learning-centers.html
 - en/news/2026-11-21-ai-english-learning-cabin-for-global-partners.html
@@ -38,9 +41,6 @@
 - en/news/2026-11-19-phonics-pronunciation-vocabulary-training-path.html
 - en/news/2026-11-19-guaranteed-score-improvement-contract-explained.html
 - en/news/2026-11-19-china-edtech-ai-vocabulary-training-investor-note.html
-- en/news/2026-11-18-zhongkao-english-score-improvement-workflow.html
-- en/news/2026-11-18-high-school-english-stuck-at-90.html
-- en/news/2026-11-18-english-program-add-on-for-learning-centers.html
 
 ## 4. 需要继续修复的SEO基础问题
 
