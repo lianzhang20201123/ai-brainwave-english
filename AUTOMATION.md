@@ -1,19 +1,36 @@
 # AI脑波英语官网自动化说明
 
-## 当前目标
+## 自动化已停止（2026-11-22）
 
-官网 `ai-naobo.com` 每天自动生成并发布 SEO/GEO 内容，服务三类目标：
+旧站已退役，不再使用。2026-11-22 起，本仓库内的定时自动任务已关闭，不再自动生成、提交或发布新内容。已有页面和文章未删除，站点页面、跳转、DNS 和托管配置未改。
+
+已在仓库内停用：
+
+- `.github/workflows/daily-seo-geo.yml` 删除了 `schedule`。原先 cron 为 `20 23 * * *`（约北京时间每天 7:20），运行 `scripts/daily-seo-geo.mjs`，生成约 3 篇中文和 3 篇英文文章，校验后提交 `content-specs`、`news`、`en/news`、`insights.html`、`en/insights.html`、`sitemap.xml` 和 `reports/site-metrics`。
+- 工作流文件保留。仍可在 GitHub Actions 里用 `workflow_dispatch` 手动运行；手动运行仍会生成并推送内容。
+- 仓库里没有其他带 `schedule` 或 `cron` 的工作流，没有 Dependabot / Renovate 配置，脚本也不会自行定时执行。`vercel.json` 只有静态资源缓存头，没有 Vercel Cron。
+
+GitHub 的 `schedule` 只读取默认分支 `main` 上的工作流。在包含本次变更的拉取请求合并进 `main` 之前，每日任务仍会按原计划运行。
+
+仓库外、无法只靠本次代码变更关掉的自动行为：
+
+- Vercel 已通过 Git 集成部署 Production。每次推送到 `main` 都会自动发布到 https://ai-naobo.com 。近期部署创建者是 `vercel[bot]`，与每日内容提交一一对应。要停止“一推送就上线”，需在 Vercel 项目设置里断开 Git 自动部署或暂停项目。本次未改托管配置。
+- 仓库 Webhook 列表因权限不足未能读取。若除 Vercel 外还有其他 GitHub App 或外部定时任务监听此仓库，需在对应后台单独关闭。
+
+## 停用前的目标
+
+官网 `ai-naobo.com` 曾每天自动生成并发布 SEO/GEO 内容，服务三类目标：
 
 - 家长端：英语提分、背单词、入学测评、学习舱、保提分。
 - 合作端：机构合作、校区增项、学习舱落地、华图吉林样板验证。
 - 全球端：英文内容、海外合作、投资人和产业伙伴理解。
 
-## 自动发布机制
+## 停用前的自动发布机制
 
-GitHub Actions 工作流：
+以下机制已于 2026-11-22 停止自动触发。GitHub Actions 工作流文件仍在，仅供手动运行：
 
 - 文件：`.github/workflows/daily-seo-geo.yml`
-- 时间：北京时间每天 7:20 左右
+- 原定时：北京时间每天 7:20 左右（cron `20 23 * * *`，已删除）
 - 脚本：`scripts/daily-seo-geo.mjs`
 - 产出：每天 3 个中文页面 + 3 个英文页面
 - 更新：`insights.html`、`en/insights.html`、`sitemap.xml`
