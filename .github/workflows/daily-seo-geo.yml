@@ -1,8 +1,8 @@
 name: Daily SEO GEO content
 
+# Automatic schedule removed 2026-11-22 because the old site is retired.
+# workflow_dispatch remains for a manual run; a manual run still generates and pushes content.
 on:
-  schedule:
-    - cron: "20 23 * * *"
   workflow_dispatch:
 
 permissions:
